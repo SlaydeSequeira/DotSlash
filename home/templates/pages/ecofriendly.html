@@ -1,0 +1,186 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="product-list">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="{% static 'img/cloth-2.png' %}" alt="Red Casual Shirt">
+            <h3>Grey Casual Shirt</h3>
+            <p>A stylish grey shirt made from 100% organic cotton. Perfect for casual wear.</p>
+            <p class="price">$39.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="{% static 'img/cloth-3.png' %}" alt="Blue Denim Jeans">
+            <h3>Red Tshirt</h3>
+            <p>A classic red t-shirt made from sustainable organic cotton, perfect for a casual everyday look..</p>
+            <p class="price">$49.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="{% static 'img/cloth-4.png' %}" alt="Black Leather Jacket">
+            <h3>Yellow T-shirt</h3>
+            <p>Genuine yellow t-shirt with a sleek black finish.</p>
+            <p class="price">$89.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="{% static 'img/cloth-5.png' %}" alt="Green T-shirt">
+            <h3>Black T-shirt</h3>
+            <p>Comfortable black t-shirt made from organic cotton.</p>
+            <p class="price">$24.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <img src="{% static 'img/cloth-6.png' %}" alt="White Summer Dress">
+            <h3>White Summer Dress</h3>
+            <p>A breezy white dress, perfect for warm weather outings.</p>
+            <p class="price">$59.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="{% static 'img/cloth-7.png' %}" alt="Casual Sneakers">
+            <h3>Casual Pants</h3>
+            <p>Women's karuna Cord Leg Pant .</p>
+            <p class="price">$69.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="{% static 'img/cloth-2.png' %}" alt="Organic Cotton Sweater">
+            <h3>Organic Cotton T-Shirt</h3>
+            <p>Soft and warm sweater made from organic cotton, perfect for winter.</p>
+            <p class="price">$79.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    .page-title {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .product {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 30%;
+        height: 400px; /* Fixed height for all product cards */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .product img {
+        width: 100%;
+        height: 200px; /* Fixed height for the image */
+        object-fit: cover; /* Ensures image scales well */
+        border-radius: 8px;
+    }
+
+    .product h3 {
+        font-size: 20px;
+        color: #2c3e50;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .product p {
+        font-size: 14px;
+        color: #7f8c8d;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .price {
+        font-size: 16px;
+        color: #e74c3c;
+        font-weight: bold;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .add-to-cart-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .add-to-cart-btn:hover {
+        background-color: #2980b9;
+    }
+
+    .product-list .product {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .product-list .product .add-to-cart-btn {
+        margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+        .product {
+            width: 45%;
+            height: 400px; /* Fixed height for smaller screens */
+        }
+    }
+
+    @media (max-width: 576px) {
+        .product {
+            width: 100%;
+            height: 400px; /* Fixed height for mobile */
+        }
+
+        .page-title {
+            font-size: 28px;
+        }
+    }
+</style>
+{% endblock content %}

@@ -1,0 +1,82 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div style="display: flex; flex-direction: column; background-size: cover; background-image: url('{% static "img/closet_bg.png" %}'); background-position: center;">
+    <!-- Add Item Button -->
+    <div style="display: flex; flex-direction: row; margin-bottom: 20px; padding: 20px">
+        <a href="/add_dress">
+            <button class="btn" style="background-color:white;">Add Item</button>
+        </a>
+    </div>
+
+    <!-- Modal -->
+    
+
+    <!-- Display Items -->
+    <div style="display: flex; flex-wrap: wrap; gap:20px; padding:20px;">
+        {% if closet_items %}
+                {% for key, item in closet_items.items %}
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img class="card-img-top" src="{{ item.image_url }}" alt="{{ item.item_name }}" style="width: 100%; height: 200px; object-fit: cover; padding: 20px;">
+                            <div class="card-body" style="display: flex; flex-direction: row; justify-content: space-between;">
+                                <div style="display: flex; flex-direction: column;">
+                                    <h5 class="card-title">{{ item.item_name }}</h5>
+                                    <p class="card-text">Type: {{ item.item_type }}</p>
+                                    <p class="card-text">Tag: {{ item.item_tag }}</p>
+                                </div>
+                                <div style="display: flex; flex-direction: column;">
+                                    <a href="{% url 'worn_today' key %}">
+                                        <button class="btn btn-primary">
+                                            Worn Today
+                                        </button>
+                                    </a>                             
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No items in the closet.</p>
+            {% endif %}
+            
+    </div>
+</div>
+
+<script>
+    // Open Modal
+    document.getElementById('openModalBtn').addEventListener('click', function() {
+        document.getElementById('itemModal').style.display = 'block';
+    });
+
+    // Close Modal
+    document.getElementById('closeModalBtn').addEventListener('click', function() {
+        document.getElementById('itemModal').style.display = 'none';
+    });
+
+    // Handle Form Submission
+    document.getElementById('addItemForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent form from reloading the page
+
+        const formData = new FormData(this);
+        
+        fetch("{% url 'add_dress' %}", {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Handle successful response, like closing the modal or showing success message
+            document.getElementById('itemModal').style.display = 'none';
+            location.reload(); // Reload the page to show the newly added item
+        })
+        .catch(error => {
+            // Handle errors, if any
+            console.error('Error:', error);
+        });
+    });
+</script>
+
+{% endblock content %}

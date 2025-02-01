@@ -1,0 +1,43 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mx-auto p-6">
+    <!-- MVP Section -->
+    {% if mvp %}
+        <div class="bg-green-100 p-4 rounded-lg shadow-md mb-6" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <h3 class="font-semibold text-center text-green-800">MVP of the Tournament</h3>
+            <h1 class="text-center font-bold text-green-700" style="padding: 20px; background-color: goldenrod; width: fit-content; border-radius: 20px; color: white; border: 2px gold solid;">{{ mvp.name }}</h1>
+        </div>
+    {% endif %}
+
+    <!-- Leaderboard Section -->
+    <div class="bg-white rounded-lg shadow-md p-4">
+        <h2 class="font-semibold text-center mb-4 text-gray-800">Leaderboard</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-200 rounded-lg" style="width: 100%;">
+                <thead class="bg-blue-500 text-black">
+                    <tr>
+                        <th style="border-bottom: 1px solid black;" class="py-2 px-4 border-b text-left">Rank</th>
+                        <th style="border-bottom: 1px solid black;" class="py-2 px-4 border-b text-left">Team Name</th>
+                        <th style="border-bottom: 1px solid black;" class="py-2 px-4 border-b text-left">Points</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-700">
+                    {% for team, points in leaderboard %}
+                        <tr class="{% cycle 'bg-gray-50' '' %}">
+                            <td class="py-2 px-4 border-b">{{ forloop.counter }}</td>
+                            <td class="py-2 px-4 border-b font-semibold">{{ team }}</td>
+                            <td class="py-2 px-4 border-b">{{ points }}</td>
+                        </tr>
+                    {% empty %}
+                        <tr>
+                            <td colspan="3" class="text-center py-4 text-gray-500">No teams in the leaderboard yet.</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,85 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1>Your Shopping Cart</h1>
+
+    {% if cart %}
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in cart %}
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>${{ item.price }}</td>
+                <td><a href="{% url 'remove_from_cart' item.id %}" class="remove-btn">Remove</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h2>Total: ${{ total_price|floatformat:2 }}</h2>
+    <a href="{% url 'payment' %}" class="checkout-btn">Proceed to Checkout</a>
+
+    {% else %}
+    <p>Your cart is empty.</p>
+    {% endif %}
+</div>
+
+<style>
+    .cart-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    .cart-table th, .cart-table td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .remove-btn {
+        padding: 5px 10px;
+        background-color: #e74c3c;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .remove-btn:hover {
+        background-color: #c0392b;
+    }
+
+    .checkout-btn {
+    display: inline-block;  /* Make the button an inline-block element */
+    padding: 12px 25px;     /* Padding for the button */
+    background-color: #3498db;  /* Blue background */
+    color: white;           /* White text color */
+    font-size: 16px;        /* Font size for the text */
+    border-radius: 5px;     /* Rounded corners */
+    text-decoration: none;  /* Remove underline from the link */
+    cursor: pointer;        /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for the button */
+}
+
+.checkout-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+}
+
+.checkout-btn:active {
+    background-color: #1f639a; /* Even darker blue when the button is pressed */
+    box-shadow: none; /* Remove shadow when the button is clicked */
+}
+
+    
+</style>
+{% endblock content %}

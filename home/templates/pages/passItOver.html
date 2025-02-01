@@ -1,0 +1,54 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div style="padding: 20px;">
+    <h1>Pass It Over</h1>
+    <h5>Choose from Basic, Advance, or Premium options to buy or donate items.</h5>
+
+    <!-- Buttons for each category -->
+    <div class="p-2" style="display: flex; justify-content: center; gap: 20px;">
+        <a href="/basicItem">
+            <button class="btn btn-primary" style="width: 200px; height: 75px; font-size: larger;">
+                Basic
+            </button>
+        </a>
+        <a href="/advanceItem">
+            <button class="btn btn-secondary" style="width: 200px; height: 75px; font-size: larger;">
+                Advance
+            </button>
+        </a>
+        <a href="/premiumItem">
+            <button class="btn btn-danger" style="width: 200px; height: 75px; font-size: larger;">
+                Premium
+            </button>
+        </a>
+    </div>
+
+    <!-- Display all items -->
+    <div class="container" style="padding: 20px;">
+        <div class="row" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px;">
+            {% if items %}
+                {% for item in items %}
+                    <div class="col-md-4">
+                        <div class="card mb-4" style="border: 2px solid 
+                            {% if item.category == 'basic' %}#007bff
+                            {% elif item.category == 'advance' %}#6c757d
+                            {% elif item.category == 'premium' %}#dc3545
+                            {% endif %};">
+                            <img class="card-img-top" src="{{ item.image }}" alt="{{ item.name }}" style="width: 75%; height: 75%; object-fit: cover; padding: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ item.name }}</h5>
+                                <p class="card-text">Cost: ${{ item.cost }}</p>
+                                <p class="card-text">Category: {{ item.category|title }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No items available in any category.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

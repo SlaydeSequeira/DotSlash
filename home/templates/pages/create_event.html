@@ -1,0 +1,84 @@
+
+{% extends 'layouts/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<div style="display: flex; padding: 30px; flex-direction: column; gap: 20px;">
+    <div>
+        <h2>Event Registration</h2>
+        <form
+        action="{% url 'create_event' %}"
+        method="post"
+        enctype="multipart/form-data"
+        >
+        {% csrf_token %}
+
+        <label for="poster">Event Poster:</label>
+        <input type="file" id="poster" name="poster" class="form-control" accept="image/*" required />
+        <br>
+
+        <label for="name">Event Name:</label>
+        <input type="text" id="name" name="name" required />
+    </div>
+    <div>
+        <div>
+            <h3>Category:</h3>
+            <label
+                ><input type="radio" name="category" value="Indoor" required />
+                Indoor</label
+            >
+            <label
+                ><input type="radio" name="category" value="Outdoor" required />
+                Outdoor</label
+            >
+            <label
+                ><input type="radio" name="category" value="Other" required /> Other</label
+            >
+        </div>
+        
+    
+        <label for="location">Location:</label>
+        <input type="text" id="location" class="form-control" name="location" required />
+    
+        <label for="description">Description:</label>
+        <textarea id="description" class="form-control" name="description" rows="4" required></textarea>
+    
+        <label for="rules">Rules (PDF):</label>
+        <input type="file" id="rules" name="rules" class="form-control" accept=".pdf" required />
+    
+        <label for="event_time">Event Time:</label>
+        <input type="datetime-local" id="event_time" class="form-control" name="event_time" required />
+    </div>
+    
+
+    <button class="btn btn-dark" type="submit" style="margin-top: 10px;">Submit</button>
+    </form>
+
+    <script>
+    let criteriaCount = 1;
+
+    function addCriterion() {
+        criteriaCount++;
+        const container = document.getElementById("criteria-container");
+
+        const criteriaGroup = document.createElement("div");
+        criteriaGroup.classList.add("criteria-group");
+
+        // Create criterion name input
+        const label = document.createElement("label");
+        label.textContent = Criterion ${criteriaCount};
+        const input = document.createElement("input");
+        input.type = "text";
+        input.name = criteria_name${criteriaCount};
+        input.placeholder = "Enter criterion name";
+        input.required = true;
+
+        criteriaGroup.appendChild(label);
+        criteriaGroup.appendChild(input);
+        container.appendChild(criteriaGroup);
+    }
+    </script>
+
+</div>
+
+{% endblock content %}

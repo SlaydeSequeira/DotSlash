@@ -1,0 +1,36 @@
+<!-- templates/posts/feed.html -->
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+<div style="padding: 20px; display: flex; width: full; justify-content: center; flex-direction: column; align-items: center;">
+<h1>Community Feed</h1>
+<br>
+<div style="display: flex; width: 100%; justify-content: end; padding-right: 50px;">
+    <a href="{% url 'createPost' %}"><button class="btn btn-primary">Create Post</button></a>
+</div>
+{% for post in posts %}
+
+    <div class="post" style="margin-top: 20px;">
+        <p><strong>{{ post.user.username }}</strong> posted on {{ post.created_at }}</p>
+        <img src="{{ post.image.url }}" alt="Post Image" width="500px">
+        <p>{{ post.caption }}</p>
+        <a href="{% url 'like_post' post.id %}"><i class="fa fa-heart text-lg opacity-10" aria-hidden="true"></i><br> ({{ post.likes.count }}) Likes</a>
+        <br>
+        <form method="POST" action="{% url 'comment_post' post.id %}">
+            {% csrf_token %}
+            <input type="text" style="width: 50%;" name="text" placeholder="Add a comment">
+            <br>
+            <button class="btn" type="submit">Comment</button>
+        </form>
+        <ul>
+            {% for comment in post.comments.all %}
+                <li>{{ comment.user.username }}: {{ comment.text }}</li>
+            {% endfor %}
+        </ul>
+        <br><br>
+    </div>
+{% empty %}
+    <p>No posts yet. Be the first to <a href="{% url 'create_post' %}">create a post</a>!</p>
+{% endfor %}
+</div>
+{% endblock %}

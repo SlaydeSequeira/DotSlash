@@ -1,0 +1,28 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div style="padding:20px">
+        <div style="background-color: white; margin: 20px auto; padding: 20px; width: 700px; border-radius: 8px;">
+            <h2>Add New Item</h2>
+            <form id="addItemForm" enctype="multipart/form-data" method="POST" action="{% url 'add_dress' %}">
+                {% csrf_token %}
+                <label for="item_name">Item Name:</label>
+                <input type="text" id="item_name" name="item_name" required><br>
+
+                <label for="item_type">Item Type:</label>
+                <input type="text" id="item_type" name="item_type" required><br>
+
+                <label for="item_image">Item Image:</label>
+                <input type="file" id="item_image" name="item_image" required><br>  
+
+                <label for="item_tag">Item Tag:</label>
+                <input type="text" id="item_tag" name="item_tag"><br><br>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+
+</div>
+
+{% endblock content %}

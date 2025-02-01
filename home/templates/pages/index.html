@@ -1,0 +1,615 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% if request.user.is_authenticated and request.session.user_role == 'admin' %}
+<div style="display: flex; flex-direction: column; gap: 20px; padding: 20px 0px;">
+  <h1>Outdoor Events</h1>
+  <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
+      {% for event in outdoor_events %}
+      <div class="card" style="width: 300px; max-height: 600px;{% if event.status == 'close' %}border:2px red solid{% else %}border:2px green solid{% endif %}">
+              <div class="card-body" style="padding: 20px; min-height: 500px; display: flex; flex-direction: column;">
+                  <div style="display: flex; justify-content: center;">
+                      <img src="{{ event.poster|default:'img/ad1.webp' }}" style="width: 80%; max-height: 200px; min-height: 200px;" alt="Event Poster">
+                  </div>
+                  <div style="margin-top: 15px;">
+                      <h2>{{ event.name }}</h2>
+                      <h5 style="font-size: 15px;">{{ event.location }}</h5>
+                      <h5 style="font-size: 15px;">{{ event.event_time }}</h5>
+                      <h5 style="font-size: 15px;">{{ event.category }}</h5>
+                  </div>
+                  <div style="margin-top: 5px;">
+                      {% if event.rules %}
+                          <a href="{{ event.rules }}" target="_blank" class="btn btn-dark">View Rules</a>
+                      {% else %}
+                          <button class="btn btn-dark" style="display: flex; width: 100%; justify-content: center;" disabled>No Rules Available</button>
+                      {% endif %} 
+                      <button class="btn {% if event.status == 'close' %}btn-success{% else %}btn-danger{% endif %}" 
+                              style="display: flex; width: 100%; justify-content: center;" 
+                              onclick="toggleStatus('{{ event.name }}', this)">
+                          {% if event.status == 'close' %}Go LIVE{% else %}Close Event{% endif %}
+                      </button>
+                      <script>
+                          function toggleStatus(eventName, button) {
+                              fetch(/toggle-event-status/${eventName}/, {
+                                  method: 'POST',
+                                  headers: {
+                                      'X-CSRFToken': '{{ csrf_token }}', // Include the CSRF token
+                                  }
+                              })
+                              .then(response => response.json())
+                              .then(data => {
+                                  if (data.status) {
+                                      button.classList.toggle('btn-success', data.status === 'live');
+                                      button.classList.toggle('btn-danger', data.status === 'close');
+                                      button.textContent = data.status === 'live' ? 'Go LIVE' : 'Close Event';
+                                  } else {
+                                      console.error('Error toggling status:', data.error);
+                                  }
+                              })
+                              .catch(error => console.error('Request failed:', error));
+                          }
+                      </script>
+                      <br>
+                  </div>
+              </div>
+          </div>
+      {% empty %}
+          <p>No outdoor events available.</p>
+      {% endfor %}
+  </div>
+  
+  <h1>Indoor Events</h1>
+  <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
+      {% for event in indoor_events %}
+          <div class="card" style="width: 300px; max-height: 600px; {% if event.status == 'close' %}border:2px red solid{% else %}border:2px green solid{% endif %}">
+              <div class="card-body" style="padding: 20px; min-height: 500px; display: flex; flex-direction: column;">
+                  <div style="display: flex; justify-content: center;">
+                      <img src="{{ event.poster|default:'img/ad1.webp' }}" style="width: 80%; max-height: 200px; min-height: 200px;" alt="Event Poster">
+                  </div>
+                  <div style="margin-top: 15px;">
+                      <h2>{{ event.name }}</h2>
+                      <h5 style="font-size: 15px;">{{ event.location }}</h5>
+                      <h5 style="font-size: 15px;">{{ event.event_time }}</h5>
+                      <h5 style="font-size: 15px;">{{ event.category }}</h5>
+                  </div>
+                  <div style="margin-top: 5px;">
+                      {% if event.rules %}
+                          <a href="{{ event.rules }}" target="_blank" class="btn btn-dark">View Rules</a>
+                      {% else %}
+                          <button class="btn btn-dark" style="display: flex; width: 100%; justify-content: center;" disabled>No Rules Available</button>
+                      {% endif %} 
+                      <button class="btn {% if event.status == 'close' %}btn-success{% else %}btn-danger{% endif %}" 
+                              style="display: flex; width: 100%; justify-content: center;" 
+                              onclick="toggleStatus('{{ event.name }}', this)">
+                          {% if event.status == 'close' %}Go LIVE{% else %}Close Event{% endif %}
+                      </button>
+                      <script>
+                          function toggleStatus(eventName, button) {
+                              fetch(/toggle-event-status/${eventName}/, {
+                                  method: 'POST',
+                                  headers: {
+                                      'X-CSRFToken': '{{ csrf_token }}', // Include the CSRF token
+                                  }
+                              })
+                              .then(response => response.json())
+                              .then(data => {
+                                  if (data.status) {
+                                      button.classList.toggle('btn-success', data.status === 'live');
+                                      button.classList.toggle('btn-danger', data.status === 'close');
+                                      button.textContent = data.status === 'live' ? 'Go LIVE' : 'Close Event';
+                                  } else {
+                                      console.error('Error toggling status:', data.error);
+                                  }
+                              })
+                              .catch(error => console.error('Request failed:', error));
+                          }
+                      </script>
+                      <br>
+                  </div>
+              </div>
+          </div>
+      {% empty %}
+          <p>No indoor events available.</p>
+      {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+
+
+
+{% if request.user.is_authenticated and request.session.user_role == 'leader' %}
+
+<div style="display: flex; flex-direction: column; padding: 20px; gap: 20px;">
+  <h1>View Registered Teams</h1>
+
+  <!-- Outdoor Events Section -->
+  <div>
+    <h2>Outdoor Events</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+      {% for event in outdoor_events %}
+      <div class="dropdown" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; padding: 10px 20px; {% if event.status == 'close' %}visibility:hidden{% endif %}">
+        <button onclick="toggleDropdown({{ forloop.counter0 }})" class="dropdown-btn btn-dark btn" style="width: 100%; text-align: left;">
+          <div style="display: flex; justify-content: space-between;">
+            <span>{{ event.name }}</span>
+          </div>
+        </button>
+      
+        <div id="dropdown-content-{{ forloop.counter0 }}" class="dropdown-content" style="display: none; padding: 15px; background-color: #f9f9f9;">
+          <div>
+            <h3>Registered Teams</h3>
+            <ul>
+              {% if event.registered %}
+                {% for team_name in event.registered %}
+                  <li><strong>{{ team_name }}</strong></li>
+                {% endfor %}
+              {% else %}
+                <p>No teams registered yet.</p>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Indoor Events Section -->
+  <div>
+    <h2>Indoor Events</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+      {% for event in indoor_events %}
+      <div class="dropdown" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; padding: 10px 20px; {% if event.status == 'close' %}visibility:hidden{% endif %}">
+        <button onclick="toggleDropdown({{ forloop.counter0|add:outdoor_events|length }})" class="dropdown-btn btn-dark btn" style="width: 100%; text-align: left;">
+          <div style="display: flex; justify-content: space-between;">
+            <span>{{ event.name }}</span>
+          </div>
+        </button>
+      
+        <div id="dropdown-content-{{ forloop.counter0|add:outdoor_events|length }}" class="dropdown-content" style="display: none; padding: 15px; background-color: #f9f9f9;">
+          <div>
+            <h3>Registered Teams</h3>
+            <ul>
+              {% if event.registered %}
+                {% for team_name in event.registered %}
+                  <li><strong>{{ team_name }}</strong></li>
+                {% endfor %}
+              {% else %}
+                <p>No teams registered yet.</p>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleDropdown(index) {
+    const content = document.getElementById('dropdown-content-' + index);
+    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+
+{% endif %}
+
+
+
+<!-- Sponsor Dashboard -->
+{% if request.user.is_authenticated and request.session.user_role == 'sponsor' %}
+
+<style>
+    /* From Uiverse.io by Yaya12085 */ 
+.plan {
+    background-color: #4133B7;
+  border-radius: 16px;
+  box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+  padding: 20px;
+  background-color: #fff;
+  color: #697e91;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan strong {
+  font-weight: 600;
+  color: #425275;
+}
+
+.plan .inner {
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #ecf0ff;
+  border-radius: 12px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.plan .pricing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #bed6fb;
+  border-radius: 99em 0 0 99em;
+  display: flex;
+  align-items: center;
+  padding: 0.625em 0.75em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #425475;
+}
+
+.plan .pricing small {
+  color: #707a91;
+  font-size: 0.75em;
+  margin-left: 0.25em;
+}
+
+.plan .title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #425675;
+}
+
+.plan .title + * {
+  margin-top: 0.75rem;
+}
+
+.plan .info + * {
+  margin-top: 1rem;
+}
+
+.plan .features {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan .features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.plan .features li + * {
+  margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+  background-color: #1FCAC5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.plan .features .icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.plan .features + * {
+  margin-top: 1.25rem;
+}
+
+.plan .action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.plan .button {
+  background-color: #6558d3;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 0.625em 0.75em;
+  text-decoration: none;
+}
+
+.plan .button:hover, .plan .button:focus {
+  background-color: #4133B7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+</style>
+<div style="display: flex; flex-direction: column; padding: 20px;">
+  <h1>Choose Sponsor Plan</h1>
+  <div class="plan">
+		<div class="inner">
+			<span class="pricing">
+				<span>
+					$10 <small>/ m</small>
+				</span>
+			</span>
+			<h3>Mini</h3>
+			<p class="info">This plan is for those who have a team already and running a large business.</p>
+			<ul class="features">
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span><strong>20</strong> Events</span>
+				</li>
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span>No <strong>Data Analytics</strong></span>
+				</li>
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+				<strong>2</strong>	<span>Products Upload</span>
+				</li>
+        <li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+				<strong>0</strong>	<span>Sponsor Selfie Banners</span>
+				</li>
+                <li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+                    <a href="#" class="view-preview" data-image="{% static 'img/mini.png' %}">View Preview</a>				</li>
+			</ul>
+			<div class="action">
+                <a href="{% url 'payment' %}" class="button checkout-btn">
+                    Choose plan
+                </a>
+                
+                
+			</div>
+		</div>
+
+        <div class="inner">
+			<span class="pricing">
+				<span>
+					$25 <small>/ m</small>
+				</span>
+			</span>
+			<h3>Major</h3>
+			<p class="info">This plan is for those who have a team already and running a large business.</p>
+			<ul class="features">
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span><strong>40</strong> Events</span>
+				</li>
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span>User <strong>visits tracking</strong></span>
+				</li>
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+				<strong>8</strong>	<span>Products Upload</span>
+				</li>
+        <li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+				<strong>2</strong>	<span>Sponsor Selfie Banners</span>
+				</li>
+                <li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+                    <a href="#" class="view-preview" data-image="{% static 'img/major.png' %}">View Preview</a>
+				</li>
+			</ul>
+			<div class="action">
+                <a href="{% url 'payment' %}" class="button checkout-btn">
+                    Choose plan
+                </a>
+                
+                
+			</div>
+		</div>
+
+      <div class="inner" style="border: 4px goldenrod solid;">
+			<span class="pricing">
+				<span>
+					$30 <small>/ m</small>
+				</span>
+			</span>
+			<p class="title">Super</p>
+			<p class="info">This plan is for those who have a team already and running a large business.</p>
+			<ul class="features">
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span><strong>60</strong> Events</span>
+				</li>
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+					<span>User <strong>Visits</strong></span>
+                    <span>User <strong>Clicks</strong></span>
+				</li>
+				<li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+				<strong>15</strong>	<span>Products Upload</span>
+				</li>
+        <li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+				<strong>5</strong>	<span>Sponsor Selfie Banners</span>
+				</li>
+                <li>
+					<span class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+						</svg>
+					</span>
+                    <a href="#" class="view-preview" data-image="{% static 'img/super.png ' %}">View Preview</a>
+
+
+				</li>
+			</ul>
+			<div class="action">
+			<a class="button" href="#">
+				Choose plan
+			</a>
+			</div>
+		</div>
+	</div>
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" style="width: 800px; height: 500px;">
+    </div>
+</div>
+<script>
+
+    // JavaScript to handle modal display
+    document.querySelectorAll('.view-preview').forEach(item => {
+        item.addEventListener('click', function(event) {
+            event.preventDefault();
+            const imageSrc = item.getAttribute('data-image');
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+        });
+    });
+
+    // Close modal when clicking the "x"
+    document.querySelector('.close').addEventListener('click', function() {
+        document.getElementById('imageModal').style.display = 'none';
+    });
+
+    // Close modal on outside click
+    window.addEventListener('click', function(event) {
+        if (event.target === document.getElementById('imageModal')) {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+    });
+
+</script>
+
+{% endif %}
+
+
+
+
+<!-- AD Div -->
+{% if request.user.is_authenticated and request.session.user_role != 'admin' and request.session.user_role != 'leader' and request.session.user_role != 'sponsor'  %}
+<div style="display: flex; flex-direction: row; margin: 20px; gap: 50px; justify-content: center;">
+  <div>
+    {% if image_urls %}
+        <img src="{{ image_urls|random }}" alt="Random Image" width="300px" height="200px">
+    {% else %}
+        <img src="{% static 'img/ad1.webp' %}" alt="" width="300px" height="200px">
+    {% endif %}
+  </div>
+  <div>
+    {% if image_urls %}
+        <img src="{{ image_urls|random }}" alt="Random Image" width="300px" height="200px">
+    {% else %}
+        <img src="{% static 'img/ad1.webp' %}" alt="" width="300px" height="200px">
+    {% endif %}
+  </div>
+</div>
+{%endif%}
+
+{% endblock content %}

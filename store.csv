@@ -1,0 +1,351 @@
+id,gender,articleType,baseColour,season,usage,productDisplayName,link
+1,Men,Shirts,Navy Blue,Fall,Casual,Turtle Check Men Navy Blue Shirt,http://assets.myntassets.com/v1/images/style/properties/7a5b82d1372a7a5c6de67ae7a314fd91_images.jpg
+2,Men,Jeans,Blue,Summer,Casual,Peter England Men Party Blue Jeans,http://assets.myntassets.com/v1/images/style/properties/4850873d0c417e6480a26059f83aac29_images.jpg
+3,Women,Watches,Silver,Winter,Casual,Titan Women Silver Watch,http://assets.myntassets.com/v1/images/style/properties/Titan-Women-Silver-Watch_b4ef04538840c0020e4829ecc042ead1_images.jpg
+4,Men,Track Pants,Black,Fall,Casual,Manchester United Men Solid Black Track Pants,http://assets.myntassets.com/v1/images/style/properties/8153dc35d9a5420eeb93922067137db6_images.jpg
+5,Men,Tshirts,Grey,Summer,Casual,Puma Men Grey T-shirt,http://assets.myntassets.com/v1/images/style/properties/Puma-Men-Grey-T-shirt_32668f8a61454d0cc028a808cf21b383_images.jpg
+6,Men,Tshirts,Grey,Summer,Casual,Inkfruit Mens Chain Reaction T-shirt,http://assets.myntassets.com/v1/images/style/properties/9c1b19682ecf926c296f520d5d6e0972_images.jpg
+7,Men,Shirts,Green,Summer,Ethnic,Fabindia Men Striped Green Shirt,http://assets.myntassets.com/v1/images/style/properties/06e9d4231254fdb2c7fe967ad413ad7b_images.jpg
+8,Women,Shirts,Purple,Summer,Casual,Jealous 21 Women Purple Shirt,http://assets.myntassets.com/v1/images/style/properties/45ddbc6a15140556214e15923244755b_images.jpg
+9,Men,Socks,Navy Blue,Summer,Casual,Puma Men Pack of 3 Socks,http://assets.myntassets.com/v1/images/style/properties/4ca8848ab441378a392d9d5bf0b0f3c7_images.jpg
+10,Men,Watches,Black,Winter,Casual,Skagen Men Black Watch,http://assets.myntassets.com/v1/images/style/properties/Skagen-Men-Black-Watch_4982b2b1a76a85a85c9adc8b4b2d523a_images.jpg
+11,Men,Casual Shoes,Black,Summer,Casual,Puma Men Future Cat Remix SF Black Casual Shoes,http://assets.myntassets.com/v1/images/style/properties/051d64772f1b38ff476fbf0a807f365a_images.jpg
+12,Women,Belts,Black,Summer,Casual,Fossil Women Black Huarache Weave Belt,http://assets.myntassets.com/v1/images/style/properties/8eee4563e14cf451b07f27761fd6535f_images.jpg
+13,Men,Flip Flops,Black,Fall,Casual,Fila Men Cush Flex Black Slippers,http://assets.myntassets.com/v1/images/style/properties/53690e3f396f411e184b249672d6ebae_images.jpg
+14,Women,Handbags,Blue,Summer,Casual,Murcia Women Blue Handbag,http://assets.myntassets.com/v1/images/style/properties/Murcia-Women-Blue-Handbag_13cfaff26872c298112a8e7da15c1e1d_images.jpg
+15,Boys,Flip Flops,Navy Blue,Fall,Casual,Ben 10 Boys Navy Blue Slippers,http://assets.myntassets.com/v1/images/style/properties/5cab6a2305d0e63142f721228aa6d293_images.jpg
+16,Men,Shirts,Purple,Fall,Formal,Reid & Taylor Men Check Purple Shirts,http://assets.myntassets.com/v1/images/style/properties/8bc9be576081baae77e8561b1132288f_images.jpg
+17,Men,Watches,Black,Winter,Casual,Police Men Black Dial Watch PL12889JVSB,http://assets.myntassets.com/v1/images/style/properties/Police-Men-Black-Dial-Watch_5bd8cae4fc61052a6f00cfcd69c4a936_images.jpg
+18,Girls,Tops,White,Summer,Casual,Gini and Jony Girls Knit White Top,http://assets.myntassets.com/v1/images/style/properties/f3964f76c78edd85f4512d98b26d52e9_images.jpg
+19,Women,Bra,Beige,Summer,Casual,Bwitch Beige Full-Coverage Bra BW335,http://assets.myntassets.com/v1/image/style/properties/51832/Bwitch-Beige-Full-Coverage-Bra-BW335_1_d516fa94f14f0a5ecc90df7754390eb5.jpg
+20,Women,Handbags,Brown,Summer,Casual,Baggit Women Brown Handbag,http://assets.myntassets.com/v1/images/style/properties/b14c7bf275c6edca3e849200fb7cbf6c_images.jpg
+21,Men,Watches,Black,Winter,Casual,CASIO G-Shock Men Black Digital Watch G-7710-1DR G223,http://assets.myntassets.com/assets/images/17429/2018/3/5/11520250143953-CASIO-G-Shock-Men-Black-Digital-Watch-G223-8211520250143786-1.jpg
+22,Men,Sandals,Black,Fall,Casual,ADIDAS Men Spry M Black Sandals,http://assets.myntassets.com/v1/images/style/properties/c5a22e9ccf9b10e0a89ffbbf3e386584_images.jpg
+23,Unisex,Shoe Accessories,Black,Summer,Casual,Timberland Unisex Rubber Sole Brush Shoe Accessories,http://assets.myntassets.com/v1/images/style/properties/92589dc7416b70f1a5c6a4c1f13d14e3_images.jpg
+24,Men,Sweatshirts,Grey,Fall,Sports,ADIDAS Men Lfc Auth Hood Grey Sweatshirts,http://assets.myntassets.com/v1/images/style/properties/59912a0287751ff0475c8748dbcf4ea0_images.jpg
+25,Men,Deodorant,White,Spring,Casual,David Beckham Signature Men Deos,http://assets.myntassets.com/v1/images/style/properties/3295fc148576955745c0b259d7968727_images.jpg
+26,Men,Formal Shoes,Black,Winter,Formal,Buckaroo Men Flores Black Formal Shoes,http://assets.myntassets.com/v1/images/style/properties/06edc2da9c6d103d299e5e8dafc5b6b9_images.jpg
+27,Women,Bracelet,Bronze,Winter,Casual,Pitaraa Women Bronze Beaded Bracelet,http://assets.myntassets.com/v1/images/style/properties/Pitaraa-Women-Golden-Brass-Bead-Bracelet_179aa06939858b54e8e6c80fe12d94d5_images.jpg
+28,Men,Tshirts,Navy Blue,Fall,Sports,Fila Men's Round Neck Navy Blue T-shirt,http://assets.myntassets.com/v1/images/style/properties/296a8c388d05d67346db88af27d3b763_images.jpg
+29,Women,Lipstick,Brown,Spring,Casual,Colorbar Soft Touch Show Stopper Copper Lipstick 037,http://assets.myntassets.com/assets/images/56019/2019/1/11/49d718c4-6d86-42d1-8d00-1ce4b7851b2c1547190759839-Colorbar-Soft-Touch-Show-Stopper-Copper-Lipstick-037-2715471-1.jpg
+30,Women,Handbags,Brown,Winter,Casual,Murcia Women Casual Brown Handbag,http://assets.myntassets.com/v1/images/style/properties/88d0bc675d72477729f38c30332e749a_images.jpg
+31,Men,Shirts,Navy Blue,Summer,Formal,John Players Men Navy Blue Shirt,http://assets.myntassets.com/v1/images/style/properties/3af9f145845d8453a066322de35980af_images.jpg
+32,Boys,Tshirts,Green,Summer,Casual,Disney Kids Boy's Crew Sea Life Sialing Green Teen Kidswear,http://assets.myntassets.com/v1/images/style/properties/0108969213975af06095ff84a0ec0c72_images.jpg
+33,Men,Shirts,Brown,Summer,Casual,John Players Men Brown Shirt,http://assets.myntassets.com/v1/images/style/properties/John-Players-Men-Brown-Shirt_7eec3b0568f65dc8f39a534376538551_images.jpg
+34,Men,Casual Shoes,White,Winter,Casual,Gas Men Europa White Shoes,http://assets.myntassets.com/v1/images/style/properties/9c3d77147758ab10f12caf6184fe13ef_images.jpg
+35,Women,Flats,Black,Winter,Casual,Carlton London Women Black & Gold Toned Flats,http://assets.myntassets.com/v1/images/style/properties/Carlton-London-Women-Black-Gladiator-Sandals_b8f695202ccc1889f65d57b4000a888f_images.jpg
+36,Women,Kurtas,Green,Fall,Ethnic,Diva Women Embroided Green Kurta,http://assets.myntassets.com/v1/images/style/properties/08a0c29d2ea67ca9449aa54466f6b0a1_images.jpg
+37,Women,Handbags,White,Summer,Casual,Rocky S Women White Handbag,http://assets.myntassets.com/v1/images/style/properties/Rocky-S-Women-White-Handbag_1440a0abd2ddaf3199965e604831b164_images.jpg
+38,Women,Handbags,Teal,Summer,Casual,Kiara Women Teal Handbag,http://assets.myntassets.com/v1/images/style/properties/8b58c65e5634233b165c40cdbbcf58b8_images.jpg
+39,Women,Watches,Copper,Winter,Casual,Fossil Women Copper Chronograph Watch CH2589,http://assets.myntassets.com/v1/images/style/properties/072af0cd079f20296c72f3594a21f141_images.jpg
+40,Women,Tshirts,Pink,Summer,Casual,Jealous 21 Women's Pink T-shirt,http://assets.myntassets.com/v1/images/style/properties/b56e261f9206aa95e42c43f4e62d0e5a_images.jpg
+41,Men,Belts,Black,Fall,Formal,Peter England Men Formal Black Belt,http://assets.myntassets.com/v1/images/style/properties/Peter-England-Men-Formal-Black-Beltbc472bd919c505690ecbc1eed8af7fbf_images.jpg
+42,Women,Flats,Brown,Winter,Casual,Catwalk Women Leather Brown Flats,http://assets.myntassets.com/v1/images/style/properties/94a9deea53125663d9bbe61cb38b84b4_images.jpg
+43,Men,Watches,Off White,Winter,Casual,Maxima Ssteele Men Off White Watch,http://assets.myntassets.com/v1/images/style/properties/93aa34922c6446706c003ba2255747f5_images.jpg
+44,Women,Kurtas,Beige,Summer,Ethnic,W Women Printed Beige Kurta,http://assets.myntassets.com/v1/images/style/properties/df0a23e732654c5e7db3888e39393e79_images.jpg
+45,Men,Waistcoat,Grey,Fall,Casual,Scullers Men  Grey Waistcoat,http://assets.myntassets.com/v1/images/style/properties/0d2e2ceaaf6d09d447caad678b2edbe6_images.jpg
+46,Men,Sports Shoes,White,Fall,Sports,Nike Men's Incinerate MSL White Blue Shoe,http://assets.myntassets.com/v1/images/style/properties/4eff2353c62ec8b7bca9fbbaf5996bd2_images.jpg
+47,Men,Shorts,Black,Summer,Sports,Puma Men Long Logo Black Bermuda,http://assets.myntassets.com/v1/images/style/properties/91ca48e3204f23cd376fad7f186875bf_images.jpg
+48,Men,Briefs,Maroon,Winter,Casual,Levis Men Boxer Maroon Brief,http://assets.myntassets.com/v1/images/style/properties/155353efc674d253e30c213ca07bbb0b_images.jpg
+49,Men,Shirts,Red,Fall,Formal,John Miller Men Stripes White Red Shirts,http://assets.myntassets.com/v1/images/style/properties/5e557eb0be7c6420f7c7a6bbaa432993_images.jpg
+50,Women,Belts,Black,Summer,Casual,Baggit Women Hood Dabang Black Belt,http://assets.myntassets.com/v1/images/style/properties/2eb3aa5eefb3319f10f7815100a18e3c_images.jpg
+51,Women,Watches,White,Winter,Casual,Maxima Women White Dial Watch,http://assets.myntassets.com/v1/images/style/properties/676dd802241d46a5ce28c78d1dabbc5a_images.jpg
+52,Men,Formal Shoes,Black,Fall,Formal,Clarks Men Hang Work Leather Black Formal Shoes,http://assets.myntassets.com/v1/images/style/properties/2976e4095e7b3ae2de99df54d2adeaaa_images.jpg
+53,Women,Kurtas,Brown,Summer,Ethnic,Vishudh Women Brown Kurta,http://assets.myntassets.com/v1/images/style/properties/fee54b57fcd02b7c07d42b0918025099_images.jpg
+54,Men,Briefs,Blue,Summer,Casual,Playboy Men Blue Titanium Briefs,http://assets.myntassets.com/v1/images/style/properties/Playboy-Men-Blue-Titanium-Briefs_5c63c52edabbab43f6aefc52842d73f2_images.jpg
+55,Men,Formal Shoes,Black,Summer,Formal,Arrow Men Black Formal Shoes,http://assets.myntassets.com/v1/images/style/properties/Arrow-Men-Black-Formal-Shoes_70a3c7c185338a5636c8c0e668829bb6_images.jpg
+56,Men,Tshirts,Black,Summer,Casual,Puma Men's Stripe Polo Black T-shirt,http://assets.myntassets.com/v1/images/style/properties/02e4e32cd9d09052f0ec3d46fa747d39_images.jpg
+57,Women,Tshirts,Purple,Summer,Casual,Nike Women Purple Polo T-shirt,http://assets.myntassets.com/v1/images/style/properties/206a0614c4644cd8816576efd47d60d8_images.jpg
+58,Men,Shirts,White,Summer,Casual,Gini and Jony Boy's Kaleb White Brown Kidswear,http://assets.myntassets.com/v1/images/style/properties/1aae016d0abb224cfc18e6bd9bb01ad1_images.jpg
+59,Men,Watches,Silver,Winter,Casual,Carrera Men Dial steel finish strap Silver Watches,http://assets.myntassets.com/v1/images/style/properties/b2959d44db543af13d78492225a830de_images.jpg
+60,Men,Tshirts,Red,Fall,Casual,Wrangler Men Motor Rider Red T-Shirts,http://assets.myntassets.com/v1/images/style/properties/b34550bc6415dcd66892de4ef2837fd9_images.jpg
+61,Women,Sarees,Grey,Fall,Ethnic,FNF Pink & Grey Wedding Collection Sari,http://assets.myntassets.com/v1/images/style/properties/FNF-Green-Collection-for-Wedding-Wear-Sari_6c60eef0b8d9cff87cfcd1f73953e5cd_images.jpg
+62,Men,Tshirts,Black,Fall,Casual,Puma Men Scribble Black Tshirts,http://assets.myntassets.com/v1/images/style/properties/cd16e955e4b6b3f9d7089c15652a3f00_images.jpg
+63,Men,Watches,Black,Winter,Casual,CASIO EDIFICE Men Black Dial Chronograph Watch ED60,http://assets.myntassets.com/v1/images/style/properties/b8024bdd3fc47c2b20bd840f89811979_images.jpg
+64,Women,Handbags,Beige,Summer,Casual,French Connection Women Beige Handbag,http://assets.myntassets.com/v1/images/style/properties/97d3bb4a71c9f7da88305ce9144d8576_images.jpg
+65,Men,Casual Shoes,Black,Fall,Casual,Timberland Men Black Casual Shoes,http://assets.myntassets.com/v1/images/style/properties/70e74ca34b3b534b19d6b006d5bfad0a_images.jpg
+66,Men,Casual Shoes,Purple,Summer,Casual,Vans Men Classic Slip-On Purple & Black Shoes,http://assets.myntassets.com/v1/images/style/properties/49f884ddf4420d869ad143857d3bc33d_images.jpg
+67,Women,Perfume and Body Mist,Pink,Spring,Casual,Police Women Passion Perfume,http://assets.myntassets.com/v1/images/style/properties/438c41900a80acabb3ef197f0559a9eb_images.jpg
+68,Men,Sports Shoes,White,Summer,Sports,ADIDAS Men's Lowell White Silver Shoe,http://assets.myntassets.com/v1/images/style/properties/0707b75d2d44e9cec9d27c944294ddbe_images.jpg
+69,Men,Shorts,Blue,Summer,Casual,Do U Speak Green Men Blue Shorts,http://assets.myntassets.com/v1/images/style/properties/Do-u-speak-green-Men-Blue-Shorts_40b6775eae62124195817a64d4ae4a93_images.jpg
+70,Men,Casual Shoes,Red,Fall,Casual,ID Men Red Shoes,http://assets.myntassets.com/v1/images/style/properties/6a6ebc47eaf2fe034bcfd94060a285ba_images.jpg
+71,Women,Handbags,Black,Summer,Casual,Peperone Women Black & White Handbag,http://assets.myntassets.com/v1/images/style/properties/73bc7d63943231e4df1c7b7600496a3d_images.jpg
+72,Men,Casual Shoes,Khaki,Summer,Casual,Vans Men Khaki Shoes,http://assets.myntassets.com/v1/images/style/properties/Vans-Men-Khaki-Shoes_dcaf7c703e9c0396650529df2b2a8893_images.jpg
+73,Men,Shirts,Pink,Fall,Casual,Indigo Nation Men Reversible Bling Pink Shirts,http://assets.myntassets.com/v1/images/style/properties/0be615f02ae1f1cfe78155555a79007c_images.jpg
+74,Women,Tshirts,Black,Fall,Sports,Nike Women Black T-shirt,http://assets.myntassets.com/v1/images/style/properties/135f9aa8141d682fc218393049c70324_images.jpg
+75,Men,Sweatshirts,Blue,Fall,Casual,ADIDAS Men Blue Sweatshirt,http://assets.myntassets.com/v1/images/style/properties/fcd52c6506b43f3af116a62c2ea81204_images.jpg
+76,Men,Tshirts,Red,Fall,Casual,Manchester United Men Solid Red Tshirt,http://assets.myntassets.com/v1/images/style/properties/eba1c1b241555d8afa3f7232ed2c6933_images.jpg
+77,Women,Heels,Black,Winter,Casual,Rocia Women Black Flats,http://assets.myntassets.com/v1/images/style/properties/8d6fd53f28e010658cdf5c14c43d0cb0_images.jpg
+78,Women,Heels,Brown,Winter,Casual,Catwalk Women Leather Flats,http://assets.myntassets.com/v1/images/style/properties/4d90e05b9e99e203b3ce191439619bcb_images.jpg
+79,Women,Tops,Green,Summer,Casual,Mineral Women Green Top,http://assets.myntassets.com/v1/images/style/properties/fe446adf94f9beb301b61bfc75a70bfa_images.jpg
+80,Women,Sandals,Pink,Fall,Casual,Crocs Dora Boots Pink Sandals,http://assets.myntassets.com/v1/images/style/properties/0be6693dafb4261645b22c6e9e7e67f4_images.jpg
+81,Men,Sunglasses,Black,Winter,Casual,Image Men Sunglasses,http://assets.myntassets.com/v1/images/style/properties/Image-Men-Classic-Eyewear-Black-Sunglasses_a37f3b87d0d05062ed063adc7aac78bf_images.jpg
+82,Men,Flip Flops,Silver,Fall,Casual,Lotto Men XL Water Man Silver Slippers,http://assets.myntassets.com/v1/images/style/properties/69482728a521cbd2ba571e36016d5f63_images.jpg
+83,Men,Tshirts,Pink,Summer,Casual,United Colors of Benetton Men Solid Pink Polo T-shirts,http://assets.myntassets.com/v1/images/style/properties/8d7f0bbb0bdefcbcc692bcdf4a6400ee_images.jpg
+84,Men,Innerwear Vests,Grey,Summer,Casual,Levis Men Comfort Style Grey Innerwear Vest,http://assets.myntassets.com/v1/images/style/properties/c5c095c0e09eb200aa8d57457c53ec07_images.jpg
+85,Men,Flip Flops,Black,Summer,Casual,Reebok Men Black Possession Flip Flops,http://assets.myntassets.com/v1/images/style/properties/647838a2e988ab55b76c9aa9ddd15ad7_images.jpg
+86,Women,Pendant,Silver,Summer,Casual,Lucera Women Silver Pendant,http://assets.myntassets.com/v1/images/style/properties/aff52e6e6bc208923a493612e8f6a3e7_images.jpg
+87,Men,Watches,White,Winter,Casual,Maxima Men White Dial Analog Chronograph Watch,http://assets.myntassets.com/v1/images/style/properties/80c170d3a8e46c81f22ecebd1f772d32_images.jpg
+88,Women,Nail Polish,Bronze,Spring,,Streetwear Ash Nail Polish # 31,http://assets.myntassets.com/v1/images/style/properties/Streetwear-Ash-Nail-Polish--31_21d33100dbf0e4b8bb0b33a980de469b_images.jpg
+89,Unisex,Laptop Bag,Orange,Summer,Casual,Peter England Unisex Orange Sleeve Bag,http://assets.myntassets.com/v1/images/style/properties/1847a81fa1d237bfbae1e797dff55909_images.jpg
+90,Men,Sports Shoes,White,Summer,Sports,Puma Men Axis White & Grey Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/52ad8ae288ba080d88a116b3c70305ec_images.jpg
+91,Women,Tops,Off White,Summer,Casual,Tonga Women Maroon Top,http://assets.myntassets.com/v1/images/style/properties/Tonga-Women-Maroon-Top_e5cc855ba59e5640817434d45f9c088d_images.jpg
+92,Women,Scarves,Brown,Summer,Casual,Femella Women Brown Scarf,http://assets.myntassets.com/v1/images/style/properties/aeb9132a29d8844aca73a4544d8135c5_images.jpg
+93,Unisex,Rain Jacket,Coffee Brown,Summer,,Just Natural Unisex Charcoal Rain Jacket,http://assets.myntassets.com/v1/images/style/properties/cbc319393da4e3d0eb140d3c8a045d2c_images.jpg
+94,Men,Tshirts,Black,Summer,Casual,ADIDAS Men's Twelve Faster T-shirt,http://assets.myntassets.com/v1/images/style/properties/2d986dbf9e5f64e3ab8471120c557db4_images.jpg
+95,Women,Dresses,Blue,Summer,Casual,Arrow Woman Women Blue Dress,http://assets.myntassets.com/v1/images/style/properties/c5b0d7c1f0308be020655bc10ca16427_images.jpg
+96,Men,Briefs,Red,Summer,Casual,Levis Men Red Brief,http://assets.myntassets.com/v1/images/style/properties/07f0136ab41d3167b3d1e8b84cfc5107_images.jpg
+97,Men,Sandals,Black,Summer,Casual,Ganuchi Men Casual Black Sandals,http://assets.myntassets.com/v1/images/style/properties/b23f1e70aec0102c360fb9dfdc476023_images.jpg
+98,Women,Night suits,White,Summer,Casual,SDL by Sweet Dreams Women Green Printed Night Suit S11-3124,http://assets.myntassets.com/v1/images/style/properties/SDL-by-Sweet-Dreams-Women-White-Pyjama-Set_debea45adf6bdb5816030e5d05b53d2f_images.jpg
+99,Men,Tshirts,Black,Summer,Casual,Indigo Nation Men Printed Black T-shirt,http://assets.myntassets.com/v1/images/style/properties/7a1bc7d255671c7f4b85f1b1b35e945b_images.jpg
+100,Women,Perfume and Body Mist,Red,Spring,Casual,DKNY Women Red Delicious Perfume,http://assets.myntassets.com/v1/images/style/properties/2965814bbf6d6a14e720c712941b323c_images.jpg
+101,Women,Skirts,Blue,Summer,Sports,Urban Yoga Women Blue Skirt With Leggings,http://assets.myntassets.com/v1/images/style/properties/c3a37f190933411b11c0fa488bc8bc4d_images.jpg
+102,Girls,Tops,Black,Summer,Casual,Gini and Jony Girls Black Top,http://assets.myntassets.com/v1/images/style/properties/dce310e4c15223a6c964631190263284_images.jpg
+103,Men,Casual Shoes,White,Fall,Casual,Nike Men Air Rift MTR White Casual Shoe,http://assets.myntassets.com/v1/images/style/properties/ac5a2fb9462db16f4cf5fc0f3616a9e6_images.jpg
+104,Men,Sports Shoes,White,Summer,Sports,ADIDAS Men White Corona Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/5059a8f382c53105f1bdce6780543934_images.jpg
+105,Unisex,Watches,Black,Winter,Casual,Fastrack Unisex Black Dial Watch 9915PP13,http://assets.myntassets.com/v1/images/style/properties/1de1449cc15d68bc4e53fac49a1e0e18_images.jpg
+106,Men,Casual Shoes,Blue,Summer,Casual,Vans Men Blue Era Scilla Plaid Shoes,http://assets.myntassets.com/v1/images/style/properties/Vans-Men-Blue-Casual-Shoes_f9ad04b071e06c34a04e2c0a047d58a1_images.jpg
+107,Unisex,Flip Flops,Navy Blue,Summer,Casual,Crocs Kids Navy Blue Clogs,http://assets.myntassets.com/v1/images/style/properties/Crocs-Kids-Navy-Blue-Clogs_dd0334757683ef726ca116cc7b8b6012_images.jpg
+108,Men,Tshirts,White,Fall,Casual,Classic Polo Men Vulcan White Polo Tshirts,http://assets.myntassets.com/v1/images/style/properties/9b9622c9c440e59a67c876cf07706f3c_images.jpg
+109,Men,Sports Shoes,Grey,Fall,Sports,Fila Men Destiny Grey Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/498da65eeee9a23f2049449258384d55_images.jpg
+110,Men,Sports Shoes,Blue,Summer,Sports,ADIDAS Men Blue Chill Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/c0abfa74fe61af6ba9e5f4936f45e6c7_images.jpg
+111,Men,Shirts,Yellow,Fall,Casual,Turtle Check Men Yellow Shirt,http://assets.myntassets.com/v1/images/style/properties/1049df82b306da238c324c6c7031b135_images.jpg
+112,Men,Wallets,Black,Summer,Casual,Arrow Men Black Wallet,http://assets.myntassets.com/v1/images/style/properties/7cc4a01bf1667b6954fb9d44bfdda095_images.jpg
+113,Women,Heels,Grey,Winter,Casual,Catwalk Women Gun Metal Grey Heels,http://assets.myntassets.com/v1/images/style/properties/cea14ca6ae7273963babfa80798aa61c_images.jpg
+114,Women,Wallets,Beige,Summer,Casual,United Colors of Benetton Women Solid Beige Wallets,http://assets.myntassets.com/v1/images/style/properties/22ab917e5ff62a05d1d932daf35cf158_images.jpg
+115,Men,Sandals,Brown,Summer,Casual,Lotto Men Ridge Brown Sandals,http://assets.myntassets.com/v1/images/style/properties/42344fe581af7a4c62d2a39ceb57be24_images.jpg
+116,Men,Shirts,White,Fall,Casual,U.S. Polo Assn. Men White & Navy Blue Shirt,http://assets.myntassets.com/v1/images/style/properties/US-Polo-Assn-Men-White---Navy-Blue-Shirt_233bed1565b9ac72f62fb685a2223f3c_images.jpg
+117,Men,Briefs,White,Summer,Casual,Jockey ELANCE Men Bikini White Brief 1005,http://assets.myntassets.com/v1/images/style/properties/e5b0ca8a3d69ff5f0d6e2d9303705eb9_images.jpg
+118,Women,Blazers,Charcoal,Summer,Formal,Scullers For Her Charcoal Blazer,http://assets.myntassets.com/v1/images/style/properties/a2826334fe816ee0e95ce93b8aabc90d_images.jpg
+119,Women,Jeans,Black,Summer,Casual,Jealous 21 Women Black Jeans,http://assets.myntassets.com/v1/images/style/properties/Jealous-21-Women-Black-Jeans_6c38590b2ec56b444a760aa56a8ef7e9_images.jpg
+120,Women,Flip Flops,Red,Winter,Casual,iPanema Women Red Flip Flops,http://assets.myntassets.com/v1/images/style/properties/3101e6784596ba83c3fb728bcf5b6187_images.jpg
+121,Women,Handbags,Blue,Summer,Casual,Fabindia Women Blue Silk Sling Bag,http://assets.myntassets.com/v1/images/style/properties/21c45000f209a31a74ed47f9ec9ac87e_images.jpg
+122,Women,Flats,Silver,Spring,Casual,Carlton London Women Silver Wedge Sandal,http://assets.myntassets.com/v1/images/style/properties/1133e704c0d02e19ac7b09685788aa40_images.jpg
+123,Women,Kurtas,Green,Summer,Ethnic,Sushilas Women Printed Green Kurta,http://assets.myntassets.com/v1/images/style/properties/Sushilas-Women-Printed-Green-Kurta_c9347616597dbcbe6eca805e1677c269_images.jpg
+124,Women,Ring,Silver,Summer,Casual,Lucera Women Silver Ring,http://assets.myntassets.com/v1/images/style/properties/Lucera-Women-Silver-Ring_dccb8dafadde1c4759acfb940fcb42e9_images.jpg
+125,Boys,Tshirts,Blue,Fall,Casual,Doodle Boy's Route 66 Biker Blue Teen Kidswear,http://assets.myntassets.com/v1/images/style/properties/117451d5bf32c9ec341a6dfd0c28121a_images.jpg
+126,Unisex,Watches,White,Winter,Casual,ADIDAS Unisex Three Small Dials White Watches,http://assets.myntassets.com/v1/images/style/properties/f9f0f53a996cd6df9e48e4e685e25047_images.jpg
+127,Men,Sunglasses,Copper,Winter,Casual,Ray-Ban Men Active Lifestyle Copper Sunglasses,http://assets.myntassets.com/v1/images/style/properties/Ray-Ban-Men-Active-Lifestyle-Copper-Sunglassesb7761297ec669a622453f898fce8759f_images.jpg
+128,Unisex,Sports Shoes,Black,Fall,Sports,ADIDAS Kids Adispeed Black Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/6bb0dda205ff23b2b1fda526a3c74374_images.jpg
+129,Men,Shirts,Green,Fall,Casual,Scullers Men  Green Check Shirt,http://assets.myntassets.com/v1/images/style/properties/9b2dc2cfc35d37aee2f4d46532384605_images.jpg
+130,Men,Sandals,White,Fall,Casual,Puma Men Fashion Cat White Slipper,http://assets.myntassets.com/v1/images/style/properties/c78acc78b83e4f2e014215d2a302f04b_images.jpg
+131,Men,Watches,Black,Winter,Casual,Fastrack Men Economy 2 Analg Black Watch,http://assets.myntassets.com/v1/images/style/properties/112edfec7e1965c0f64ad9eb51cac579_images.jpg
+132,Men,Sweatshirts,Blue,Fall,Casual,United Colors of Benetton Men Solid Blue Sweatshirt,http://assets.myntassets.com/v1/images/style/properties/2641289161a53042c64ced38cadb099b_images.jpg
+133,Men,Tshirts,Black,Fall,Sports,Puma Men's Large Logo Graphic Black T-shirt,http://assets.myntassets.com/v1/images/style/properties/59433decf845a0c856d3879435d95560_images.jpg
+134,Women,Perfume and Body Mist,Gold,Spring,Casual,Giorgio Armani Women Idole Perfume,http://assets.myntassets.com/v1/images/style/properties/b0d3dcd6aaa7274486236fa267ef8cb5_images.jpg
+135,Women,Kurta Sets,Black,Summer,Ethnic,Aneri Women Black & Maroon Salwar Suit,http://assets.myntassets.com/v1/images/style/properties/4d16721ce6d31a02786fa271a40dbc86_images.jpg
+136,Women,Clutches,Red,Winter,Casual,Spice Art Women Ribbon Embroidery Red Clutch,http://assets.myntassets.com/v1/images/style/properties/ee617574380de80bee9cce9ec585e8be_images.jpg
+137,Men,Sandals,Beige,Fall,Casual,Estd. 1977 Men Beige & Green Sandals,http://assets.myntassets.com/v1/images/style/properties/7adfef9d7001cdcb9a58822c0c8b615f_images.jpg
+138,Women,Handbags,Brown,Summer,Casual,Rocky S Women Brown Handbag,http://assets.myntassets.com/v1/images/style/properties/Rocky-S-Women-Brown-Handbag_5b44f798c0d6b84b00ae5a6316d931af_images.jpg
+139,Men,Sandals,Black,Summer,Casual,Coolers Men Black Sandals,http://assets.myntassets.com/v1/images/style/properties/5fdccf41dafc022f36adea9a7df6751c_images.jpg
+140,Men,Shirts,Red,Fall,Casual,Levis Men Check Red Shirts,http://assets.myntassets.com/v1/images/style/properties/9584fab8cde60a77e797973020e5c91d_images.jpg
+141,Women,Shrug,Pink,Summer,Casual,Tonga Women Pink Printed Shrug,http://assets.myntassets.com/v1/images/style/properties/28d91b2c102e5742714c7f706a73eeb4_images.jpg
+142,Men,Briefs,Grey,Summer,Casual,Chromozome Men Grey Briefs,http://assets.myntassets.com/v1/images/style/properties/9bd108a473fd6a01005be56f7f0a3807_images.jpg
+143,Men,Tshirts,Black,Fall,Casual,U.S. Polo Assn. Men Stripes Black  Polo Tshirt,http://assets.myntassets.com/v1/images/style/properties/7648ed40d904bf77502b84894f9cb980_images.jpg
+144,Women,Flats,Copper,Winter,Casual,Portia Women Copper-Toned & Brown Sandals,http://assets.myntassets.com/v1/images/style/properties/daadf44edb9420bbd0d335702cf6e095_images.jpg
+145,Men,Shirts,Black,Summer,Casual,Spykar Men Black and white Check Shirt,http://assets.myntassets.com/v1/images/style/properties/5c0c7cee1d5905a18f6a8d4821ae21aa_images.jpg
+146,Unisex,Backpacks,Black,Fall,Sports,Nike Unisex Swoosh Black Backpack,http://assets.myntassets.com/v1/images/style/properties/6c411e5ff01a791860ac0807b719cf28_images.jpg
+147,Men,Tshirts,Black,Summer,Casual,Myntra Men's Brain Black T-shirt,http://assets.myntassets.com/v1/images/style/properties/477a546e340e50d1c7d4fb252a146692_images.jpg
+148,Men,Sports Shoes,White,Summer,Sports,Nike Men Air Relentless 2 MSL White Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/16a858c7c58d665ba030df2f9f326086_images.jpg
+149,Men,Casual Shoes,Black,Fall,Casual,ADIDAS Men Black Anzo Breeze Casual Shoes,http://assets.myntassets.com/v1/images/style/properties/aca469db7fbac91473fc2a810461889d_images.jpg
+150,Women,Watches,White,Winter,Casual,Fastrack Women White Dial Watch,http://assets.myntassets.com/v1/images/style/properties/1c5acff37ece119c5adfe594c2b4bdcd_images.jpg
+151,Men,Bracelet,Steel,Summer,Casual,Revv Men Steel Bracelet,http://assets.myntassets.com/v1/images/style/properties/551485ddc5fa42d1734898e3b32e72c0_images.jpg
+152,Women,Bra,Black,Summer,Casual,Lovable Women All Day Long Black Bra,http://assets.myntassets.com/v1/images/style/properties/cef99b09020adbc2a0d7e5f9889ce9c4_images.jpg
+153,Men,Caps,White,Fall,Casual,Manchester United Men Solid White Cap,http://assets.myntassets.com/v1/images/style/properties/4d0de24d6538a8507059625949e34878_images.jpg
+154,Women,Heels,Black,Winter,Casual,Rocia Women Black Heels,http://assets.myntassets.com/v1/images/style/properties/50c7dd932d347768b05766e5dd231355_images.jpg
+155,Men,Tshirts,Yellow,Fall,Casual,Puma Men ducati logo tee Yellow Tshirts,http://assets.myntassets.com/v1/images/style/properties/ef754e63472dece06abfa6d6c1266d91_images.jpg
+156,Men,Casual Shoes,White,Fall,Casual,Numero Uno Men White Casual Shoes,http://assets.myntassets.com/v1/images/style/properties/ff82e800185f09437bdd38606dbd4ec6_images.jpg
+157,Men,Watches,Silver,Winter,Casual,Q&Q Men Silver-Toned Dial Analogue Watch Q252J404Y,http://assets.myntassets.com/v1/images/style/properties/Q-Q-Men-Silver-Dial-Watch_9bc915bdcff17ce2aa1168cf3a27654e_images.jpg
+158,Men,Innerwear Vests,White,Summer,Casual,Levis Men White Innerwear Vest,http://assets.myntassets.com/v1/images/style/properties/Levis-Men-White-Innerwear-Vest_ead823677896c7f737a55a7750d809c7_images.jpg
+159,Men,Watches,Black,Winter,Casual,Maxima Men Black Dial Watch,http://assets.myntassets.com/v1/images/style/properties/Maxima-Men-Black-Dial-Watch_c427a05e5f1d545b2b03ad86b4960427_images.jpg
+160,Men,Tshirts,Purple,Summer,Casual,Wrangler Men's Minstrel Shoulder Loop Purple T-shirt,http://assets.myntassets.com/v1/images/style/properties/f9622342fedb746c6515647f128b94a6_images.jpg
+161,Men,Tshirts,Navy Blue,Fall,Casual,Wrangler Men Furious Rides Navy Blue T-Shirts,http://assets.myntassets.com/v1/images/style/properties/cc57b520818a0ada689545d2bdd025d9_images.jpg
+162,Women,Sarees,Green,Fall,Ethnic,FNF Green Wedding Collection Sari,http://assets.myntassets.com/v1/images/style/properties/FNF-Green-Collection-for-Wedding-Sari_7e6a7f6bba933b0923861ac3b65c9f5e_images.jpg
+163,Men,Casual Shoes,Red,Fall,Casual,Rockport Men LLandro Red Casual Shoes,http://assets.myntassets.com/v1/images/style/properties/0ea0e6130d5d4c093e0e516f9b43ced6_images.jpg
+164,Women,Casual Shoes,Green,Winter,Casual,Skechers Women Green Shoe,http://assets.myntassets.com/v1/images/style/properties/7de650b81e8fd8be54794b6f466f3b8e_images.jpg
+165,Men,Watches,Silver,Winter,Casual,Maxima Men Ssteele Silver Dial Watch,http://assets.myntassets.com/v1/images/style/properties/1223bc5aa8de555c058dbafa61b4c6cf_images.jpg
+166,Men,Watches,Gold,Winter,Casual,Titan Men Gold Dial Watch,http://assets.myntassets.com/v1/images/style/properties/946643c653dae988057d427e72b4d5f6_images.jpg
+167,Men,Trousers,Black,Fall,Formal,John Miller Men Solid Type Black Trousers,http://assets.myntassets.com/v1/images/style/properties/bbddb8510d402639e0a038bde5ec08bb_images.jpg
+168,Men,Tshirts,Navy Blue,Summer,Casual,Locomotive Men Navy Blue Printed T-shirt,http://assets.myntassets.com/v1/images/style/properties/b24d6360e5f726e86b7db28e2225894b_images.jpg
+169,Men,Watches,Brown,Winter,Casual,Maxima Men Brown Dial Watch,http://assets.myntassets.com/v1/images/style/properties/f0a2359518806948aa76a37b1c9fe2a9_images.jpg
+170,Women,Sweatshirts,Black,Fall,Casual,United Colors Of Benetton Women Light Winter Black Sweatshirts,http://assets.myntassets.com/v1/images/style/properties/c843af98fead5393ecf56934e07ca496_images.jpg
+171,Women,Flats,Brown,Winter,Casual,Catwalk Women Brown Sandals,http://assets.myntassets.com/v1/images/style/properties/Catwalk-Women-Brown-Sandals_c094f60d90c695681a6b79cf241777fc_images.jpg
+172,Women,Perfume and Body Mist,White,Spring,Casual,Nike Fragrances Women 5th Element Perfume 150 ml,http://assets.myntassets.com/v1/images/style/properties/3db0d3544350b8d72f968ede0af3b0d3_images.jpg
+173,Women,Handbags,White,Winter,Casual,Kiara Women Graphiti White Handbag,http://assets.myntassets.com/v1/images/style/properties/97f41f38d2fa5f88fa5322daf7f093f6_images.jpg
+174,Men,Sunglasses,Grey,Winter,Casual,Louis Philippe Men Grey Sunglasses,http://assets.myntassets.com/v1/images/style/properties/Louis-Philippe-Men-Grey-Sunglasses_1446c537f905743abebac42f5a02f776_images.jpg
+175,Men,Shirts,Blue,Fall,Casual,Mark Taylor Men Striped Blue Shirt,http://assets.myntassets.com/v1/images/style/properties/e01152d30659f4099b46cb0c1fcb918b_images.jpg
+176,Women,Earrings,Silver,Winter,Ethnic,Fabindia Women Anusuya Silver Earrings,http://assets.myntassets.com/v1/images/style/properties/f21ff0021d5d5095ed087314e548ea24_images.jpg
+177,Unisex,Casual Shoes,Black,Summer,Casual,Lotto Unisex Canvas Black Check Shoe,http://assets.myntassets.com/v1/images/style/properties/ef0e264ebd347265da9fcf1bdff4b2f5_images.jpg
+178,Men,Belts,Tan,Summer,Casual,Peter England Men Casual Tan Belt,http://assets.myntassets.com/v1/images/style/properties/f8a2854d9f97f9fde7b768dd3648198d_images.jpg
+179,Men,Formal Shoes,Black,Fall,Formal,Arrow Men Formal Black Shoe,http://assets.myntassets.com/v1/images/style/properties/0201105e4604bc784525d9cf0e972c40_images.jpg
+180,Women,Belts,Grey,Winter,Casual,Lino Perros Women Weaved  Grey Belt,http://assets.myntassets.com/v1/images/style/properties/3f475c2e490c2e2c653f10aa5a4a4506_images.jpg
+181,Women,Tops,Blue,Summer,Casual,Lee Women Paula Blue Top,http://assets.myntassets.com/v1/images/style/properties/5b427e7381af213df2d54a17cd193aea_images.jpg
+182,Unisex,Casual Shoes,Black,Summer,Casual,Vans Unisex Black & Grey Classic Shoes,http://assets.myntassets.com/v1/images/style/properties/ea497c53bbc69cb510e3f7b2fe4a7abb_images.jpg
+183,Men,Shirts,Black,Fall,Casual,United Colors of Benetton Men Short Black Shirts,http://assets.myntassets.com/v1/images/style/properties/47e0bf9f4a04bd6f5901c0f4fc65e54d_images.jpg
+184,Men,Deodorant,Black,Spring,Casual,Reebok Men Pack of 2 Pirates of the Caribbean Deos,http://assets.myntassets.com/v1/images/style/properties/4f56561974db43db763f18a06caedbd0_images.jpg
+185,Men,Tshirts,Black,Summer,Casual,Nike Men Printed Black T-shirt,http://assets.myntassets.com/v1/images/style/properties/75c8932f3b5a274c73e3c94f95540d7b_images.jpg
+186,Women,Lipstick,Brown,Spring,Casual,Colorbar Soft Touch Mousse Lipstick 025,http://assets.myntassets.com/v1/images/style/properties/ColorBar-Soft-Touch-Mousse-Lipstick-025_9acb45fa8b3bc6021e8ef261642e9de1_images.jpg
+187,Women,Handbags,Brown,Winter,Casual,Murcia Women Casual Brown Handbag,http://assets.myntassets.com/v1/images/style/properties/bf2a4f36c9cc6b2fb51c5e7bad341681_images.jpg
+188,Women,Trousers,Blue,Summer,Casual,ONLY Women directoire blue Trousers,http://assets.myntassets.com/v1/images/style/properties/ONLY-Women-directoire-blue-Trousers_9ad40a06ae4b8c071f84e12599c1c9b7_images.jpg
+189,Women,Deodorant,Pink,Spring,Casual,Colour me Women Flowers Deo,http://assets.myntassets.com/v1/images/style/properties/Colour-me-Women-Flowers-Deo_bbdd019aace399d86a7f5c4ba11f6881_images.jpg
+190,Girls,Tops,Blue,Summer,Casual,Gini and Jony Girls Pretty Blossom Blue Top,http://assets.myntassets.com/v1/images/style/properties/fc3c1b46906d5c148c45f532d0b3ffb5_images.jpg
+191,Men,Formal Shoes,Brown,Fall,Formal,Carlton London Men Formal Brown Formal Shoes,http://assets.myntassets.com/v1/images/style/properties/b195b911f558c0232e22849d1ca73193_images.jpg
+192,Women,Kurtas,Red,Summer,Ethnic,Vishudh Women Red Printed Kurta,http://assets.myntassets.com/v1/images/style/properties/cc658745ce38f9e09bec039a997155a9_images.jpg
+193,Unisex,Watches,Black,Winter,Sports,ADIDAS Unisex Response ST Analogue Black Watch,http://assets.myntassets.com/v1/images/style/properties/d63e1260ab9823cd64cbe4336a5bb94d_images.jpg
+194,Women,Tops,Beige,Fall,Casual,s.Oliver Women Stripes Beige Top,http://assets.myntassets.com/v1/images/style/properties/5a76ef8930d8bd543d8f7e6f5383d390_images.jpg
+195,Women,Shorts,Pink,Fall,Sports,Nike Women Solid Pink Shorts,http://assets.myntassets.com/v1/images/style/properties/f105cf31753c2cbdf23e8722dc83a019_images.jpg
+196,Women,Camisoles,Maroon,Winter,Casual,Red Rose Maroon Camisole,http://assets.myntassets.com/v1/images/style/properties/Red-Rose-Maroon-Bra_c75c0ad76e53ba58736e6f8fd21d07b0_images.jpg
+197,Men,Boxers,Multi,Summer,Casual,Probase Multicoloured Printed Boxers,http://assets.myntassets.com/v1/images/style/properties/Probase-Men-Yellow-Boxers_80cada245724ee958e0c5721d51cfab7_images.jpg
+198,Men,Tshirts,Blue,Fall,Casual,Classic Polo Men Stripes Blue Tshirts,http://assets.myntassets.com/v1/images/style/properties/8e4099bc672a376b156e1fe903fd5e16_images.jpg
+199,Women,Handbags,Blue,Summer,Casual,Baggit Women Blue Bag,http://assets.myntassets.com/v1/images/style/properties/895bed5b7e643c97fb880515cea0c930_images.jpg
+200,Men,Tshirts,Navy Blue,Summer,Casual,UCB Men's Polo Neck With Lion Logo Navy Blue T-shirt,http://assets.myntassets.com/v1/images/style/properties/b54b7d7f19b9dbb54c85c584719c46ef_images.jpg
+201,Girls,Tops,Pink,Fall,Casual,Doodle Kids Girls Pink I love Shopping Top,http://assets.myntassets.com/v1/images/style/properties/ef9685293a987f515492addd034006bf_images.jpg
+202,Men,Sports Shoes,Black,Fall,Sports,Lotto Men Atlantica Black Sports Shoe,http://assets.myntassets.com/v1/images/style/properties/1279efc8b61fb461a804f0c1f82f276b_images.jpg
+203,Women,Tshirts,Grey,Fall,Casual,Little Miss Women Printed Grey T-shirt,http://assets.myntassets.com/v1/images/style/properties/e2604389938f13f2cc1a772bba320a45_images.jpg
+204,Unisex,Backpacks,Red,Summer,Casual,ADIDAS Unisex Chicago Bulls Red Backpack,http://assets.myntassets.com/v1/images/style/properties/d0817a4778047d75a9d4f32e78b9b1fd_images.jpg
+205,Women,Jeans,Black,Fall,Casual,Jealous 21 Women Black Jegging,http://assets.myntassets.com/v1/images/style/properties/054b93509e888e996ba7b12b554870e3_images.jpg
+206,Men,Sports Shoes,Black,Fall,Sports,ADIDAS Men Sports Black Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/9c0d1badace8d2eb9680232648e94d85_images.jpg
+207,Women,Kurtas,Magenta,Fall,Ethnic,Mother Earth Women Magenta Kurta,http://assets.myntassets.com/v1/images/style/properties/1dea61d01ec84aed63dcbb32adda717a_images.jpg
+208,Men,Flip Flops,Black,Summer,Casual,Numero Uno Men Black Flip Flops,http://assets.myntassets.com/v1/images/style/properties/7b99e89eac30c7d4d78d54c8cc67e35a_images.jpg
+209,Women,Handbags,Brown,Winter,Casual,Murcia Women Snake Print Bag Brown Handbags,http://assets.myntassets.com/v1/images/style/properties/b11805dfd1077ea3a4538fba3ffed149_images.jpg
+210,Men,Tshirts,Navy Blue,Summer,Casual,Myntra Men's If You Don't Like Navy Blue T-shirt,http://assets.myntassets.com/v1/images/style/properties/c6a6fbe4d75e40529b7be5427d095142_images.jpg
+211,Women,Jewellery Set,Gold,Winter,Casual,Estelle Women Earrings & Pendant Set,http://assets.myntassets.com/v1/images/style/properties/4067d54c1f9caba707a51d665ef0e38e_images.jpg
+212,Women,Dupatta,Orange,Fall,Ethnic,Aurelia Women Voile Orange Dupatta,http://assets.myntassets.com/v1/images/style/properties/88540c74d7d507c9371c5d9f37125ce1_images.jpg
+213,Women,Watches,White,Winter,Casual,DKNY Women White Dial Watch NY8472,http://assets.myntassets.com/v1/images/style/properties/a002d0eed07e5e2c140da41e8db2ddf7_images.jpg
+214,Men,Track Pants,Navy Blue,Fall,Sports,ADIDAS Men Solid Navy Blue Track Pant,http://assets.myntassets.com/v1/images/style/properties/98252134c6398e50aeebd873e6eafceb_images.jpg
+215,Girls,Capris,Black,Summer,Casual,Gini and Jony Girls Black Capris,http://assets.myntassets.com/v1/images/style/properties/5158808a5bdd60c8c8af6999f8481160_images.jpg
+216,Men,Flip Flops,Red,Summer,Casual,Gliders Men Esquire Red Flip Flops,http://assets.myntassets.com/v1/images/style/properties/9c1df994bfd66e4485b82d0e74066d98_images.jpg
+217,Women,Sports Shoes,Lavender,Summer,Sports,ADIDAS Women Lavender Hagkok Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/97b4da7324d9f9b3a6f507333141faae_images.jpg
+218,Women,Bra,White,Summer,Casual,Enamor White Bra,http://assets.myntassets.com/v1/images/style/properties/493409fb23791fa2cb220289e92affd7_images.jpg
+219,Men,Shorts,Black,Fall,Casual,Gini and Jony Kids Boys Solid Black Shorts,http://assets.myntassets.com/v1/images/style/properties/1d2eaf1491e0bf4906165ab1eaff3ad1_images.jpg
+220,Men,Sports Shoes,White,Fall,Casual,F Sports Men White Outlander Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/F-Sports-Men-White-Outlander-Sports-Shoes_b600b7c68b5e9dd8b56dcd8732ce0fda_images.jpg
+221,Women,Lip Gloss,Brown,Spring,Casual,Revlon Gold Dust Poussiere Doree Colorburst Lip Gloss 024,http://assets.myntassets.com/v1/images/style/properties/Revlon-Gold-Dust-Poussiere-Doree-Colorburst-Lip-Gloss-024_ed41da69ac3f9c1c17cb6517a999b749_images.jpg
+222,Men,Trousers,Grey,Summer,Formal,John Miller Men Dark Grey Trousers,http://assets.myntassets.com/v1/images/style/properties/987d4390421e951dafe4bfdaba57f5fd_images.jpg
+223,Women,Tshirts,Black,Summer,Casual,Tantra Women Flower Heart Black Long T-shirt,http://assets.myntassets.com/v1/images/style/properties/906c588711dcf840a61168758f463664_images.jpg
+224,Men,Watches,White,Winter,Casual,Police Men White Dial Watch PL12698JS,http://assets.myntassets.com/v1/images/style/properties/Police-Men-Steel-Dial-Watch_51e58f90f98b042641c9b54f09b54fd6_images.jpg
+225,Women,Kurtas,Sea Green,Summer,Ethnic,Aurelia Women Sea Green Kurta,http://assets.myntassets.com/v1/images/style/properties/2e25195b2eaba31b89a991f2e0dbd532_images.jpg
+226,Men,Casual Shoes,Black,Summer,Casual,FILA Men Liga II Black Shoes,http://assets.myntassets.com/v1/images/style/properties/ea051d39d65bfdcba994e6cd49061bd7_images.jpg
+227,Women,Earrings,Gold,Winter,Casual,Estelle Women Gold Earrings,http://assets.myntassets.com/v1/images/style/properties/Estelle-Earrings_7271511bf974f34b0c0e80431617e034_images.jpg
+228,Women,Tops,Purple,Fall,Casual,Jealous 21 Women Uaine Purple Tops,http://assets.myntassets.com/v1/images/style/properties/144954d20ce2e31fe6953f3e249e9a68_images.jpg
+229,Women,Jeans,Navy Blue,Summer,Casual,Tokyo Talkies Women Navy Slim Fit Jeans,http://assets.myntassets.com/v1/images/style/properties/a6ea6713bae041ef4f62d3612586d1ef_images.jpg
+230,Men,Sunglasses,Gold,Winter,Casual,Pal Zileri Men Casual Gold Frame Sunglasses,http://assets.myntassets.com/v1/images/style/properties/e9266175735b50a2f6d100ae2ef44fe6_images.jpg
+231,Men,Formal Shoes,Black,Summer,Formal,Arrow Men Black Formal Shoes,http://assets.myntassets.com/v1/images/style/properties/8f3b9f4c5f554e39681567b22985966e_images.jpg
+232,Men,Sports Shoes,Black,Summer,Sports,Puma Men's YugoRun Black White Shoe,http://assets.myntassets.com/v1/images/style/properties/fae0ae76d008674551fbdbb64988ea51_images.jpg
+233,Women,Tops,Blue,Summer,Casual,United Colors of Benetton Women Blue Top,http://assets.myntassets.com/v1/images/style/properties/58c4b740c2d2e9b52c6900579c7ff2d2_images.jpg
+234,Men,Tshirts,White,Summer,Casual,Puma Men White and Navy Blue T-shirt,http://assets.myntassets.com/v1/images/style/properties/Puma-Men-White-and-Navy-Blue-Stripe-Polo-T-shirt_a81acd98afcadd66fa8ee8531c82ad46_images.jpg
+235,Girls,Tops,White,Fall,Casual,Doodle Kids Girls City Chic White Top,http://assets.myntassets.com/v1/images/style/properties/416f7bd57546242fd72a817de0d517e5_images.jpg
+236,Women,Tops,Black,Summer,Casual,ONLY Women Black Top,http://assets.myntassets.com/v1/images/style/properties/9d4d7aa206e22813311c0a0406ce02a4_images.jpg
+237,Men,Deodorant,Gold,Spring,Casual,Colour me Men Gold Deo,http://assets.myntassets.com/v1/images/style/properties/Colour-me-Men-Gold-Deo_73efa9034af7165f848dcc367558b461_images.jpg
+238,Women,Wallets,Black,Summer,Casual,Baggit Women Lamboo Mayur Black Wallet,http://assets.myntassets.com/v1/images/style/properties/6222ae36196ec90b30a683927c219428_images.jpg
+239,Women,Tops,Pink,Summer,Casual,Elle Women Dark Pink Top,http://assets.myntassets.com/v1/images/style/properties/Elle-Women-Dark-Pink-Top_ce0e1c18ffc47444dcb28bb7b78ae13f_images.jpg
+240,Women,Sports Shoes,Pink,Summer,Sports,Nike Women Free Run Pink Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/5b0a6dd6aadd4d4ba230ff849b36481b_images.jpg
+241,Men,Sandals,Black,Summer,Casual,Estd. 1977 Men Black Sandals,http://assets.myntassets.com/v1/images/style/properties/2a07ce87fedfca8928f12f3ddf6b7632_images.jpg
+242,Men,Flip Flops,Black,Summer,Casual,ADIDAS Men Adi Cells Black Flip Flops,http://assets.myntassets.com/v1/images/style/properties/b057c9e8d5ccc63369807a12f67a39ac_images.jpg
+243,Men,Casual Shoes,Brown,Summer,Casual,GAS Men Brown Count Casual Shoes,http://assets.myntassets.com/v1/images/style/properties/f2d705addd04fcf5516aef873254441e_images.jpg
+244,Women,Bath Robe,Pink,Winter,Casual,Red Rose Women White & Pink Polka Dot Print Bath Robe,http://assets.myntassets.com/v1/images/style/properties/Red-Rose-Women-Bath-Robe_b47ef24153050e66fce7429a01204ca9_images.jpg
+245,Unisex,Caps,White,Fall,Casual,Puma Unisex White Cap,http://assets.myntassets.com/v1/images/style/properties/Puma-Unisex-White-Cap_d397dc3eb9ff8a12d079f08a9b6c430d_images.jpg
+246,Women,Mufflers,Yellow,Fall,Casual,United Colors Of Benetton Women Yellow Muffler,http://assets.myntassets.com/v1/images/style/properties/70506325cf800559ba06b15300846ea8_images.jpg
+247,Women,Flip Flops,Blue,Summer,Casual,ADIDAS Women's Adi Groove Blue Flip Flop,http://assets.myntassets.com/v1/images/style/properties/9234f2dacc377d713b7788f670f7bf9d_images.jpg
+248,Men,Flip Flops,Brown,Summer,Casual,Coolers Men Brown Pokar Flip Flops,http://assets.myntassets.com/v1/images/style/properties/Coolers-Men-POKAR-Brown-Flip-Flops_8b247db935e7cfffb8f5a0b8d578f7bf_images.jpg
+249,Women,Handbags,Beige,Fall,Casual,Baggit Women Beige Bag,http://assets.myntassets.com/v1/images/style/properties/1041605c3decc95ef96c970da17ad051_images.jpg
+250,Women,Kurtas,Navy Blue,Summer,Ethnic,Aurelia Women Navy Blue Kurta,http://assets.myntassets.com/v1/images/style/properties/Aurelia-Women-Navy-Blue-Kurta_269c51a0aa07f814b0d68df6b37d4113_images.jpg
+251,Men,Sports Shoes,White,Fall,Sports,Puma Men Cabana Racer Sketch White Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/c7a70ae4f57ca4c605f4fabb82c735fc_images.jpg
+252,Men,Shirts,Red,Fall,Casual,Locomotive Men Check Red Shirt,http://assets.myntassets.com/v1/images/style/properties/e87ae94ffdf37c089daaad8d451f6995_images.jpg
+253,Men,Casual Shoes,White,Fall,Casual,Nike Men White Capri II Casual Shoe,http://assets.myntassets.com/v1/images/style/properties/9f8463e724322e0b47cc9f615acab635_images.jpg
+254,Men,Shirts,Purple,Fall,Casual,Scullers Men Scul Purple White Shirt,http://assets.myntassets.com/v1/images/style/properties/11dcaeada4fab2e575c449e922425c5d_images.jpg
+255,Women,Tunics,White,Summer,Casual,Fusion Beats Women White Printed Tunic,http://assets.myntassets.com/v1/images/style/properties/3c92594cc9b62cba6a314a9ca9fd1e19_images.jpg
+256,Women,Kurtas,Green,Fall,Ethnic,Mother Earth Women Blue Kurta,http://assets.myntassets.com/v1/images/style/properties/a576a21253c4cc6b7c04426389c1c58f_images.jpg
+257,Women,Flats,Brown,Winter,Casual,Inc 5 Women Brown Heels,http://assets.myntassets.com/v1/images/style/properties/be1fc833328c2708141568e2476abe81_images.jpg
+258,Women,Jackets,Cream,Summer,Casual,Forever New Women Stone Cream Jacket,http://assets.myntassets.com/v1/images/style/properties/01c417703d7775105ba346c691f4700b_images.jpg
+259,Women,Kurtas,Peach,Summer,Ethnic,W Women Peach Kurta,http://assets.myntassets.com/v1/images/style/properties/8e6291cb947f1d35eb4ebc3c73baf1eb_images.jpg
+260,Men,Shirts,Blue,Fall,Casual,Basics Men Blue Slim Fit Checked Shirt,http://assets.myntassets.com/v1/images/style/properties/2811fe105e63b5795a6442edb85bb6cd_images.jpg
+261,Women,Heels,Gold,Winter,Casual,Catwalk Women Golden Wedges,http://assets.myntassets.com/v1/images/style/properties/Catwalk-Women-Golden-Sandals_5fddd65067f3c7c0224439efc7a99ac8_images.jpg
+262,Women,Tops,Purple,Summer,Casual,United Colors of Benetton Women Solid Purple Top,http://assets.myntassets.com/v1/images/style/properties/97d87b20b1a8810ee10f617a8a7ccc52_images.jpg
+263,Women,Tops,Blue,Summer,Casual,Scullers For Her Women Blue Top,http://assets.myntassets.com/v1/images/style/properties/018b322355f8a44f117488fee256049c_images.jpg
+264,Women,Flats,Copper,Winter,Casual,Rocia Women Copper Sandals,http://assets.myntassets.com/v1/images/style/properties/93455095a8c1bc951c7bd258b600dfa1_images.jpg
+265,Men,Tshirts,Yellow,Summer,Casual,Classic Polo Men's Swiss Yellow T-shirt,http://assets.myntassets.com/v1/images/style/properties/Classic-Polo-Mens-Swiss-Yellow-T-shirt_e87fa11cdb977d11d3e673a69f4a63db_images.jpg
+266,Men,Tshirts,Navy Blue,Fall,Casual,Tantra Men's Black Sabbath Navy T-shirt,http://assets.myntassets.com/v1/images/style/properties/7c9e2e7c405128361af34be207a439a2_images.jpg
+267,Men,Belts,Black,Summer,Casual,Lino Perros Men Black Leather Belt,http://assets.myntassets.com/v1/images/style/properties/749432e06d8d1b969077552ecebd9cd4_images.jpg
+268,Men,Sandals,Tan,Summer,Casual,Gas Men Eldorado Tan Casual  Sandals,http://assets.myntassets.com/v1/images/style/properties/465863ba7b810b5ef6c516fe91c77308_images.jpg
+269,Women,Briefs,Brown,Summer,Casual,Enamor Women Pack of 3 Mid-Rise Bikini Brief,http://assets.myntassets.com/v1/images/style/properties/9d76cb50cdc99a3519f78164dbc691ae_images.jpg
+270,Men,Tshirts,White,Summer,Casual,French Connection Men White T-shirt,http://assets.myntassets.com/v1/images/style/properties/9dc3c008c07a5df5b46622ee5d8579de_images.jpg
+271,Women,Flats,Silver,Fall,Casual,Carlton London Women Wedge Silver Sandal,http://assets.myntassets.com/v1/images/style/properties/a2a3d03e64b5041ab052d5a6b10d282a_images.jpg
+272,Women,Clutches,Off White,Summer,Casual,Yelloe Off White Fur Zip Clutch,http://assets.myntassets.com/v1/images/style/properties/b548017b7f2a2d8582c75ac1afeeb28b_images.jpg
+273,Women,Tops,White,Fall,Casual,Palm Tree Kids Girls Printed White Tops,http://assets.myntassets.com/v1/images/style/properties/b590f001fb08f324b17ce869686b27dc_images.jpg
+274,Men,Briefs,Grey,Summer,Casual,Hanes Men Grey Ultimate Duo Dry Cotton Stretch Bikini Briefs,http://assets.myntassets.com/v1/images/style/properties/Hanes-Men-Ultimate-Grey-Brief_0782bb329d30535e2a3bef5657940458_images.jpg
+275,Women,Lipstick,Red,Spring,Casual,Revlon Super Lusterous Lipstick 304,http://assets.myntassets.com/v1/images/style/properties/Revlon-Super-Lusterous-Mad-About-Mauve-Lipstick-304_82c2b163c41babfca78eeb61693c666d_images.jpg
+276,Men,Perfume and Body Mist,Green,Spring,Casual,Formula 1 Go Men Perfume,http://assets.myntassets.com/v1/images/style/properties/ebe4131154706db0b3469237133343e2_images.jpg
+277,Girls,Tops,Pink,Summer,Casual,Palm Tree Girls Pink Top,http://assets.myntassets.com/v1/images/style/properties/83f4ab34db71459ba1f80bb8992cf9d5_images.jpg
+278,Unisex,Caps,Blue,Summer,Sports,ADIDAS Unisex Blue Cap,http://assets.myntassets.com/v1/images/style/properties/Adidas-Unisex-Blue-Capf0fdfddb2e26677c8067afe9586c6cba_images.jpg
+279,Men,Tshirts,Olive,Fall,Casual,United Colors of Benetton Men Olive Tshirts,http://assets.myntassets.com/v1/images/style/properties/6c598ee94ff155384130481aec05525e_images.jpg
+280,Men,Wallets,Black,Summer,Casual,United Colors of Benetton Men Solid Black Wallets,http://assets.myntassets.com/v1/images/style/properties/09fca1f67e3f78b18f76473749d93e59_images.jpg
+281,Women,Tops,Yellow,Summer,Casual,Tokyo Talkies Women Yellow Top,http://assets.myntassets.com/v1/images/style/properties/9e616458a21ce9d3b0ddf0895b24df0b_images.jpg
+282,Men,Tshirts,White,Fall,Casual,Arrow Sport Men Solid White Polo Tshirts,http://assets.myntassets.com/v1/images/style/properties/10d750eb60726aff0c78cd599a20e0ab_images.jpg
+283,Women,Sports Shoes,Purple,,Sports,Kalenji Ekiden 200 Wn Purple 2011,http://assets.myntassets.com/v1/images/style/properties/5dfa5ed32e290bbaeedd937ecdaa9a8b_images.jpg
+284,Women,Flip Flops,Orange,Summer,Casual,Lotto Women Coral Elegant Flip Flops,http://assets.myntassets.com/v1/images/style/properties/839c627c80dba9ac4412db3f35a52bb7_images.jpg
+285,Men,Shirts,Green,Fall,Casual,Flying Machine Men Check Green Shirts,http://assets.myntassets.com/v1/images/style/properties/6934c2d1bc11313536fd82a1192a1d33_images.jpg
+286,Men,Tshirts,Navy Blue,Fall,Casual,Wrangler Men Applique Navy Blue Tshirt,http://assets.myntassets.com/v1/images/style/properties/7909093ce4f956a24582b330a249d911_images.jpg
+287,Men,Flip Flops,Grey,Winter,Casual,Puma Men's Winglet II Grey Yellow White Flip Flop,http://assets.myntassets.com/v1/images/style/properties/9473ae18face7603f7bdb4b6fda3d8e2_images.jpg
+288,Men,Sandals,Brown,Summer,Casual,Lee Cooper Men Brown Casual Sandals,http://assets.myntassets.com/v1/images/style/properties/99808c9bdfee6165a0cec81d0219c1a1_images.jpg
+289,Men,Sandals,Olive,Fall,Casual,Puma Men Olive Techno Ind Sandal,http://assets.myntassets.com/v1/images/style/properties/Puma-Men-Olive-Techno-Ind-Sandal_3e7aa0b204f4317a017dfbefe260700b_images.jpg
+290,Women,Tshirts,Pink,Summer,Casual,Urban Yoga Women Printed Pink T-shirt,http://assets.myntassets.com/v1/images/style/properties/8e3ddd6772fdb8b69c328402aa2baa0c_images.jpg
+291,Men,Trunk,Charcoal,Summer,Casual,Chromozome Men Charcoal Trunk Trunks,http://assets.myntassets.com/v1/images/style/properties/cbcfe2066b676f7852c6282f85dfc43b_images.jpg
+292,Boys,Shirts,Blue,Summer,Casual,Palm Tree Boys Check Blue Shirt,http://assets.myntassets.com/v1/images/style/properties/17d5cdd77de6f87ee2451b98f3466d88_images.jpg
+293,Women,Lipstick,Pink,Spring,,Lakme Absolute Lip Last Day Kiss Lip Colour,http://assets.myntassets.com/assets/images/55001/2018/3/9/11520591701090-Lakme-Absolute-Lip-Last-Day-Kiss-Lip-Colour-9831520591701048-1.jpg
+294,Men,Shirts,Navy Blue,Fall,Casual,Indigo Nation Men Club Satin Hot Stepper Navy Blue Shirt,http://assets.myntassets.com/v1/images/style/properties/f3dc8c5e7e7d7394150506a3f2f417c0_images.jpg
+295,Women,Handbags,White,Winter,Casual,Murcia Women White With Stitch Bag,http://assets.myntassets.com/v1/images/style/properties/61d4d060e05c3e4ff1771c5e724d6c16_images.jpg
+296,Men,Watches,Black,Winter,Casual,Fastrack Men Black Watch,http://assets.myntassets.com/v1/images/style/properties/20e55321f145a292edb4cc9776ea1985_images.jpg
+297,Men,Tshirts,White,Fall,Sports,ADIDAS Men Stripe Polo White Polo T-shirt,http://assets.myntassets.com/v1/images/style/properties/e1bba450764df5aed92151be769e42d0_images.jpg
+298,Women,Bra,Purple,Summer,Casual,Lovable Women Fiona Purple Bra,http://assets.myntassets.com/v1/images/style/properties/Lovable-Women-Fiona-Purple-Bra_82e37d2949af0a30ff61f6f7fc80cadc_images.jpg
+299,Women,Lounge Pants,Blue,Winter,Casual,Jockey Women Blue Lounge Pants,http://assets.myntassets.com/assets/images/27421/2015/11/23/11448283185049-Jockey-Women-Blue-Lounge-Pants-3621448283184622-1.jpg
+300,Women,Face Wash and Cleanser,Green,Spring,Casual,Lotus Herbals Neem & Clove Purifying Face Wash,http://assets.myntassets.com/v1/images/style/properties/Lotus-Herbals-Neem---Clove-Purifying-Face-Wash_576266f24033ada1522c55008afacea9_images.jpg
+301,Women,Tops,Magenta,Summer,Casual,Sepia Women Printed Magenta Top,http://assets.myntassets.com/v1/images/style/properties/cd2a1ae491facf0acf36443998a0c217_images.jpg
+302,Women,Tops,Olive,Summer,Casual,Arrow Woman Olive Top,http://assets.myntassets.com/v1/images/style/properties/3d8b78b013627f7e9d738ccec2972480_images.jpg
+303,Men,Innerwear Vests,Grey,Summer,Casual,Levis Men Grey Innerwear T-Shirt,http://assets.myntassets.com/v1/images/style/properties/adc3a5566f4c3e9f3f729ab6f9e44c56_images.jpg
+304,Men,Shirts,Black,Fall,Casual,Scullers Men Price Catch Black Shirts,http://assets.myntassets.com/v1/images/style/properties/62f33289f2a1cbc88d6f8557a2c33638_images.jpg
+305,Women,Sarees,Beige,Fall,Ethnic,Fabindia Beige & Maroon Mull Printed Saree,http://assets.myntassets.com/v1/images/style/properties/Fabindia-Printed-Beige-Sari_b2b862ad19c18dc983c5cf843fe56bcc_images.jpg
+306,Women,Dresses,White,Summer,Casual,Gini and Jony Girl's Vanya White Polka Dot Kidswear,http://assets.myntassets.com/v1/images/style/properties/e7559ae62df37abf5338b7992aa8c628_images.jpg
+307,Men,Tshirts,Blue,Summer,Casual,Indian Terrain Men Blue T-shirt,http://assets.myntassets.com/v1/images/style/properties/f202fe30bd9441e163b7fbcfcb53e8c2_images.jpg
+308,Women,Heels,Black,Summer,Casual,Enroute Women Casual Black Flats,http://assets.myntassets.com/v1/images/style/properties/33fe789a39b0590d649cd052e53b80b6_images.jpg
+309,Women,Handbags,Brown,Winter,Casual,Baggit Women Umbrella Dum Brown Handbag,http://assets.myntassets.com/v1/images/style/properties/3c67058064553299e3cb62b79fedd1af_images.jpg
+310,Women,Necklace and Chains,Silver,Summer,Casual,Lencia Grey Swarovski Pearl Necklace,http://assets.myntassets.com/v1/images/style/properties/Lencia-Grey-Swarovski-Pearl-Necklace_8dca921b0f3b46449bbd5bb25f6f3dbb_images.jpg
+311,Women,Watches,Red,Winter,Casual,CASIO SHEEN Women Red Dial Watch SX017,http://assets.myntassets.com/v1/image/style/properties/45293/Casio-Women-Red-Dial-Watch_1_cc32a942220788a0b74c5708baff1e74.jpg
+312,Men,Watches,Black,Winter,Casual,Maxima Men Black Watch,http://assets.myntassets.com/v1/images/style/properties/c2f94914c3151fa88bc00b924c9bea22_images.jpg
+313,Women,Kurtas,Cream,Summer,Ethnic,Mother Earth Women Printed Cream Kurta,http://assets.myntassets.com/v1/images/style/properties/051884f22b637d9cf40922baecd8ff20_images.jpg
+314,Women,Handbags,Orange,Winter,Casual,Lino Perros Women Leatherite Orange Handbag,http://assets.myntassets.com/v1/images/style/properties/460dd2adbff063cc226b7146a811e7dc_images.jpg
+315,Men,Shirts,Black,Fall,Casual,United Colors Of Benetton Men Summer Black Shirts,http://assets.myntassets.com/v1/images/style/properties/79e693b484848f12265b4dd4a155fae9_images.jpg
+316,Women,Tops,White,Summer,Casual,Wrangler Women White Smocked Top,http://assets.myntassets.com/v1/images/style/properties/907aca262d340d45f49d7d3690fdc953_images.jpg
+317,Men,Socks,Grey,Summer,Casual,United Colors of Benetton Men Pack of 2 Grey Socks,http://assets.myntassets.com/v1/images/style/properties/a82a928bfbfba2e299574580ffa61dc9_images.jpg
+318,Women,Watches,White,Winter,Casual,Esprit Women White Dial Watch,http://assets.myntassets.com/v1/images/style/properties/8fa9232495f9cad5e31338c61f615afb_images.jpg
+319,Unisex,Duffel Bag,Red,Winter,Casual,Wildcraft Unisex Red Duffle Bag,http://assets.myntassets.com/v1/images/style/properties/8ee197c54df34d4e59d56d847139fe49_images.jpg
+320,Women,Perfume and Body Mist,Pink,Spring,Casual,Nike Fragrances Women Trendy Perfume 75ml,http://assets.myntassets.com/v1/images/style/properties/2688bbbcf35b0e739e7d9e5039fd6cbf_images.jpg
+321,Women,Perfume and Body Mist,Pink,Spring,Casual,J.Del Pozo Halloween Kiss Sexy Women Perfume,http://assets.myntassets.com/v1/images/style/properties/4a0b8e5cd5f8b9fe8287301280ee204a_images.jpg
+322,Men,Tshirts,Grey,Summer,Casual,Wrangler Cowboy Photo T-shirt,http://assets.myntassets.com/v1/images/style/properties/dc7e36dcafbb8aeb71dc2ebbd4427ca7_images.jpg
+323,Unisex,Sunglasses,Brown,Winter,Casual,Van Heusen Unisex Brown Sunglasses,http://assets.myntassets.com/v1/images/style/properties/Van-Heusen-Unisex-Brown-Sunglasses_2099ffb4f8eb9fd28b80922f653aa42a_images.jpg
+324,Men,Formal Shoes,Black,Fall,Formal,Enroute Men Leather Black Formal Shoes,http://assets.myntassets.com/v1/images/style/properties/1e1ddab59626e99f7163c2c8c20743b6_images.jpg
+325,Men,Sports Sandals,Navy Blue,Summer,Casual,Reebok Men Navy Twist Sandals,http://assets.myntassets.com/v1/images/style/properties/Reebok-Men-Blue-Twist-Sandals_9d151773708628e8efa686c33561b54a_images.jpg
+326,Men,Tshirts,Pink,Summer,Casual,Basics Men Pack of 3 T-shirt,http://assets.myntassets.com/v1/images/style/properties/b5fe34a5c5a88054357f33b0d2b4ce46_images.jpg
+327,Unisex,Backpacks,Black,Winter,Casual,Wildcraft Unisex Black Outdoor Backpack,http://assets.myntassets.com/v1/images/style/properties/d0e782df1a7287eb68da5806346605db_images.jpg
+328,Men,Tshirts,Blue,Summer,Sports,Nike Men's As Icon Blue T-shirt,http://assets.myntassets.com/v1/images/style/properties/4642a9cf2604998cd7665a76a2bf87c1_images.jpg
+329,Men,Deodorant,Grey,Spring,Casual,Rasasi Men Emotion Deo and Perfume Set,http://assets.myntassets.com/v1/images/style/properties/Rasasi-Men-Emotion-Deo-and-Perfume-Set_f2bcc95e69a60ac6b5473ca68bcc5563_images.jpg
+330,Men,Track Pants,Navy Blue,Fall,Casual,Proline Men Navy Track Pants,http://assets.myntassets.com/v1/images/style/properties/15324570d805103032f3a593d495aafe_images.jpg
+331,Women,Wallets,Orange,Winter,Casual,Lino Perros Women Blue Zip Orange Wallet,http://assets.myntassets.com/v1/images/style/properties/9cad6be03b1e0b544055e140b526cb94_images.jpg
+332,Men,Casual Shoes,Black,Winter,Casual,Red Chief Men Black Shoes,http://assets.myntassets.com/v1/images/style/properties/2dba90668d61bd7dd5e25a02d7612ee3_images.jpg
+333,Women,Foundation and Primer,Skin,Summer,Casual,Lakme Nine to Five Flawless Makeup Shell Foundation,http://assets.myntassets.com/assets/images/55233/2018/5/3/11525323433330-Lakme-Nine-to-Five-Flawless-Makeup-Shell-Foundation-7251525323433284-1.jpg
+334,Men,Tshirts,Red,Summer,Casual,United Colors of Benetton Men Stripes Red  Polo T-shirts,http://assets.myntassets.com/v1/images/style/properties/6723c5b48a019f7940ac913e35240620_images.jpg
+335,Women,Sports Shoes,Charcoal,Summer,Sports,Reebok Women Charcoal Grey Fuel Techno Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/ec28a6e80636805d0bf993699b656c88_images.jpg
+336,Men,Sunglasses,Black,Winter,Casual,Ray-Ban Men Active Lifestyle Black Sunglasses,http://assets.myntassets.com/v1/images/style/properties/f8b19ba970bf91df7f4c1e263faa331c_images.jpg
+337,Men,Shirts,Blue,Fall,Casual,John Miller Men Stripes Blue Shirts,http://assets.myntassets.com/v1/images/style/properties/5f2cc2a725967d426cc03f4a3fbb93c1_images.jpg
+338,Boys,Sports Shoes,Black,Fall,Sports,ADIDAS Kids Boys Duramo Synthetic Black Sports Shoes,http://assets.myntassets.com/v1/images/style/properties/39873daedc5a92eef39894b612f5cbaf_images.jpg
+339,Women,Tunics,Red,Summer,Casual,109F Women Red & White Striped Tunic,http://assets.myntassets.com/v1/images/style/properties/279197619f868018854ce9bf9b812b87_images.jpg
+340,Men,Jeans,Blue,Fall,Casual,Locomotive Men Washed Blue Jeans,http://assets.myntassets.com/v1/images/style/properties/6cb6a14583b044dca0a0bd9efc2fc4c7_images.jpg
+341,Men,Flip Flops,Blue,Fall,Casual,Puma Men Danny Blue Slipper,http://assets.myntassets.com/v1/images/style/properties/b5df5f57f0feda7a42510b6ebedf4f4d_images.jpg
+342,Men,Sweaters,Blue,Summer,Casual,United Colors of Benetton Men Solid Blue Sweater,http://assets.myntassets.com/v1/images/style/properties/339f3148805bd725b88cebe54fd52d45_images.jpg
+343,Men,Tshirts,White,Fall,Sports,Puma Men's Large Logo Graphic White French T-shirt,http://assets.myntassets.com/v1/images/style/properties/7f50a98d2319c37ba993f4bd39ec1df9_images.jpg
+344,Men,Watches,Black,Winter,Casual,Fastrack Men New Analog Black Navy Watch,http://assets.myntassets.com/v1/images/style/properties/971d32f5f437a3e65d852648dd6bbdad_images.jpg
+345,Men,Socks,Black,Summer,Casual,Calzini Men Pack of 5 Sports Socks,http://assets.myntassets.com/v1/images/style/properties/Calzini-Men-Pack-of-5-Sports-Socks_3056952ffdf96eaba3df0c68140a951b_images.jpg
+346,Women,Kurta Sets,Purple,Fall,Ethnic,Aneri Women Purple Salwar Suit,http://assets.myntassets.com/v1/images/style/properties/Aneri-Women-Blue-Salwar-Suit_310b83bb9b3c42c1b2a9a0b63e612c78_images.jpg
+347,Women,Perfume and Body Mist,Purple,Spring,Casual,Bulgari Women Omnia Perfume,http://assets.myntassets.com/v1/images/style/properties/f98d1337a330597f69db87bdcbe2c3f7_images.jpg
+348,Women,Trousers,Brown,Summer,Casual,Elle Women Brown Trousers,http://assets.myntassets.com/v1/images/style/properties/Elle-Women-Brown-Trousers_a7f66d28a9214c62dc8073fa66146018_images.jpg
+349,Men,Casual Shoes,Black,Fall,Casual,United Colors of Benetton Men Casual Black Shoes,http://assets.myntassets.com/v1/images/style/properties/fc4d12bcdc99ec17c6cbff23ce164f00_images.jpg
+350,Men,Sandals,Black,Summer,Casual,Estd. 1977 Men Black Sandals,http://assets.myntassets.com/v1/images/style/properties/b996cb05ae7c16cabfa4cadc23818247_images.jpg

@@ -1,0 +1,38 @@
+{% extends 'layouts/base.html' %} {% load static %} {% block content %}
+<h1>Generate Tournament Fixtures</h1>
+
+<!-- Form to select sport and enter the number of teams -->
+<form method="post" action="{% url 'generate_fixtures' %}">
+  {% csrf_token %}
+
+  <label for="selected_sport">Select a sport:</label>
+  <select id="selected_sport" name="selected_sport" required>
+    <option value="">-- Select a Sport --</option>
+    {% for sport in available_sports %}
+    <option value="{{ sport }}">{{ sport }}</option>
+    {% endfor %}
+  </select>
+
+  <button type="submit" class="btn btn-primary" style="margin-top:10px">Generate Fixtures</button>
+</form>
+
+<!-- Display fixtures if available -->
+{% if fixtures %}
+<h2>Fixtures for {{ selected_sport }}</h2>
+<table border="1">
+  <tr>
+    <th>Match No.</th>
+    <th>Home Team</th>
+    <th>Away Team</th>
+  </tr>
+  {% for match in fixtures %}
+  <tr>
+    <td>{{ forloop.counter }}</td>
+    <td>{{ match.0 }}</td>
+    <td>{{ match.1 }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %} {% if error %}
+<p style="color: red">{{ error }}</p>
+{% endif %} {% endblock content %}

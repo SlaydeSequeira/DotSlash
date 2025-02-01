@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Try-On</title>
+</head>
+<body>
+
+    <h1>Virtual Try-On</h1>
+
+    <!-- Button to start camera -->
+    <button onclick="startCamera()">Start Camera</button>
+
+    <!-- Video display -->
+    <div>
+        <img id="video-feed" style="max-width: 100%;" />
+    </div>
+
+    <script>
+        function startCamera() {
+            // Start fetching the video stream
+            const videoFeed = document.getElementById('video-feed');
+            videoFeed.src = "/stream/";
+        }
+    </script>
+
+</body>
+</html>

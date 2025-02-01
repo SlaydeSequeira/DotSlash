@@ -1,0 +1,92 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container-fluid">
+      <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('{% static 'img/curved-images/curved0.jpg' %}'); background-position-y: 50%;">
+        <span class="mask bg-gradient-primary opacity-6"></span>
+      </div>
+      <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
+        <div class="row gx-4">
+          <div class="col-auto">
+            <div class="avatar avatar-xl position-relative">
+              <img src="{% static 'img/bruce-mars.jpg' %}" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+            </div>
+          </div>
+          <div class="col-auto my-auto">
+            <div class="h-100">
+              <h5 class="mb-1">
+                {{ user.username }}
+              </h5>
+              <h6 class="mb-1">
+                {{ request.session.user_role }}
+              </h6>
+              <h6 class="mb-1">
+                {{ request.session.user_email }}
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-12 col-xl-4" >
+          <div class="card h-100" style="justify-content: start; padding-top: 50px; align-items: center; display: flex; flex-direction: column; gap: 50px; height: full;"">
+            <div class="col-md-8 d-flex align-items-center" style="display: flex; flex-direction: column; gap: 20px;">
+              <h4 class="mb-0" style="font-size: 30px; justify-content: center; display: flex;">Community Feed</h4>
+              <a href="/feed"><button class="btn btn-success">View Now</button></a>
+            </div>
+            <div class="col-md-8 d-flex align-items-center" style="display: flex; flex-direction: column; gap: 20px;">
+              <h4 class="mb-0" style="font-size: 30px; justify-content: center; display: flex;">Create a Post ?</h4>
+              <a href="/create"><button class="btn btn-success">Create Now</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-4">
+          <div class="card h-100">
+            <div class="card-body pb-0" style="display: flex; justify-content: center; font-size: larger;">
+              <div class="column" style="justify-content: start; padding-top: 50px; align-items: center; display: flex; flex-direction: column; height: full;">
+                <div class="col-md-8 d-flex align-items-center" style="display: flex; flex-direction: column; gap: 50px;">
+                  <h4 class="mb-0" style="font-size: 40px; justify-content: center; display: flex;">Check out our Chatbot 🤖</h4>
+                  <a href="/chatbot"><button class="btn btn-success">View Now</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-4">
+          <div class="card h-100" style="gap: 10px; padding: 10px;">
+            <div class="card-header pb-0 p-3">
+              <a href="/passItOver"><h4 class="mb-0" style="font-weight: bold;">View PassItOver</h4></a>
+            </div>
+            {% if resell_items %}
+                {% for key, item in resell_items.items %}
+                    <div class="">
+                        <div class="card" style="border: 2px solid rgb(247, 227, 9); display: flex; flex-direction: row; width: full;">
+                            <img class="card-img-top" src="{{ item.image_url }}" alt="{{ item.item_name }}" style="width: 100px; height: 100px; object-fit: cover; padding: 10px;">
+                            <div class="card-body" style="display: flex; flex-direction: column;">
+                                <h5 class="card-title">{{ item.item_name }}</h5>
+                                <p class="card-text">Type: {{ item.item_type }}</p>
+                                <p class="card-text">Cost: {{ item.item_cost }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No items available for resell.</p>
+            {% endif %}
+          </div>
+        </div>
+        <!-- Your Closet -->
+        <div class="col-12 mt-4">
+          <div class="card mb-4" style="padding: 20px;">
+            <h1>Your Closet</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

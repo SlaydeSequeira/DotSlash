@@ -1,0 +1,98 @@
+{% extends 'layouts/base-fullscreen.html' %}
+{% load i18n static admin_soft %}
+
+{% block content %}
+  <main class="main-content mt-0">
+    <section>
+      <div class="page-header min-vh-75">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-6 d-flex flex-column mx-auto">
+              <div class="card card-plain mt-8">
+                <div class="card-header pb-0 text-left bg-transparent">
+                  <h3 class="font-weight-bolder text-info text-gradient">Sign In</h3>
+                  <p class="mb-0">
+                    {% if msg %}
+                      <span class="text-danger">{{ msg | safe }}</span>
+                    {% else %}
+                      Add your details
+                    {% endif %}                      
+                  </p>
+                </div>
+                <div class="card-body">
+                  <form role="form" method="post" action="#">
+                    {% csrf_token %}
+
+                    {% if form.non_field_errors %}
+                      {% for error in form.non_field_errors %}
+                        <span class="text-danger">{{ error }}</span>
+                      {% endfor %}
+                    {% endif %}
+
+                    <!-- User Role Field -->
+                    <label for="user_role">Role</label>
+                    <div class="mb-3">
+                      <select id="user_role" name="user_role" class="form-control" required>
+                        <option value="">Select your role</option>
+                        <option value="contestant">Contestant</option>
+                        <option value="leader">Team Leader</option>
+                        <option value="judge">Judge</option>
+                        <option value="sponsor">Sponsor</option>
+                        <option value="admin">Admin</option>
+                        <!-- Add more roles as needed -->
+                      </select>
+                    </div>
+
+                    <!-- User Email Field -->
+                    <label for="user_email">Email</label>
+                    <div class="mb-3">
+                      <input type="email" id="user_email" name="user_email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+
+                    <!-- Password Field -->
+                    <label for="password">Password</label>
+                    <div class="mb-3">
+                      <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+                    </div>
+
+                    <!-- Forgot Password Link -->
+                    <p class="">
+                      <a href="{% url 'password_reset' %}" class="text-primary">Forgot password?</a>
+                    </p>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                      <button type="submit" class="btn bg-gradient-info w-100 mt-1 mb-0">Sign In</button>
+                      <p class="mt-4">
+                        Don't have an account? 
+                        <a href="{% url 'register' %}" class="text-primary">Register</a>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="oblique position-absolute top-0 h-100 d-md-block d-none me-n8">
+                <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" style="background-image:url('{% static 'img/curved-images/curved6.jpg' %}')"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock content %}
+
+{% block extrascript %}
+  <script type="application/javascript">
+    {% if user.is_authenticated %}
+      var msg = "You are authenticated as {{ username }}, but are not authorized to access this page. Would you like to login to a different account?";
+      notification.warning(msg, 'top', 'right');
+    {% endif %}
+
+    {% if form.errors %}
+      notification.warning("{% trans "Please correct the errors below." %}", 'top', 'right');
+    {% endif %}
+  </script>
+{% endblock %}

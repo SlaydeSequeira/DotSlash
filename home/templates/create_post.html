@@ -1,0 +1,13 @@
+<!-- templates/posts/create_post.html -->
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+<div style="padding: 50px; padding-bottom: 10px;">
+<h1>Create a New Post</h1>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-success" type="submit">Post</button>
+</form>
+</div>
+{% endblock %}

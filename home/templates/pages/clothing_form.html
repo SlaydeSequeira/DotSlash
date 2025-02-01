@@ -1,0 +1,53 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div style="padding: 20px;">
+    <h1>Find Your Perfect Clothing</h1>
+    <form method="post" action="{% url 'recommend' %}">
+        {% csrf_token %}
+        <label for="clothing_type">Clothing Type:</label>
+        <select name="clothing_type" id="clothing_type">
+            <option value="casual">Casual</option>
+            <option value="formal">Formal</option>
+            <option value="traditional">Traditional</option>
+        </select>
+        <br><br>
+        
+        <label for="season">Season:</label>
+        <select name="season" id="season">
+            <option value="Winter">Winter</option>
+            <option value="Summer">Summer</option>
+            <option value="Spring">Spring</option>
+            <option value="Autumn">Autumn</option>
+            <option value="All">All Seasons</option>
+        </select>
+        <br><br>
+
+        <label for="color">Color:</label>
+        <select name="color" id="color">
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+            <option value="Navy Blue">Navy Blue</option>
+            <option value="Grey">Grey</option>
+            <option value="Green">Green</option>
+            <option value="Black">Black</option>
+            <option value="Beige">Beige</option>
+            <option value="Pink">Pink</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Brown">Brown</option>
+            <option value="Ivory">Ivory</option>
+            <option value="Floral">Floral</option>
+            <option value="Denim Blue">Denim Blue</option>
+            <option value="Khaki">Khaki</option>
+            <option value="Lavender">Lavender</option>
+            <option value="Olive Green">Olive Green</option>
+            <option value="Purple">Purple</option>
+        </select>
+        <br><br>
+        
+        <input type="submit" class="btn" value="Get Recommendation">
+    </form>
+</div>
+
+{% endblock content %}

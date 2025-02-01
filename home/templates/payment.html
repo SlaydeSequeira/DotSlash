@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .payment-container {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            padding: 30px;
+            width: 100%;
+        }
+
+        .payment-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.6em;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 2px solid #e1e1e1;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            border-color: #6200ea;
+            outline: none;
+        }
+
+        .card-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-details .form-group {
+            width: 48%;
+        }
+
+        .btn-pay {
+            width: 100%;
+            background-color: #6200ea;
+            color: #fff;
+            padding: 12px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-pay:hover {
+            background-color: #4b00b9;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="payment-container">
+        <h2>Secure Payment</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="cardholder-name"> Name</label>
+                <input type="text" id="cardholder-name" name="cardholder-name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="card-number">Email Id</label>
+                <input type="text" id="card-number" name="card-number" placeholder="abc@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Contact Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="987456321" required>
+            </div>
+            
+                <!-- <p>Amount={{amount}}</p> -->
+            <button type="submit" id="rzp-button1" class="btn-pay" >Pay Now</button>
+            <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+            <script>
+            var options = {
+                "key": "{{api_key}}", // Enter the Key ID generated from the Dashboard
+                "name": "BRO CODE",
+                "description": "Test Transaction",
+                "image": "https://example.com/your_logo",
+                "order_id": "{{order_id}}", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+                "handler": function (response){
+                    alert(response.razorpay_payment_id);
+                    alert(response.razorpay_order_id);
+                    alert(response.razorpay_signature)
+                },
+                "prefill": {
+                    "name": "Gaurav Kumar",
+                    "email": "sohamnmane03@gmail.com",
+                    "contact": "9168003834"
+                },
+                "notes": {
+                    "address": "Razorpay Corporate Office"
+                },
+                "theme": {
+                    "color": "#3399cc"
+                }
+            };
+            var rzp1 = new Razorpay(options);
+            rzp1.on('payment.failed', function (response){
+                    alert(response.error.code);
+                    alert(response.error.description);
+                    alert(response.error.source);
+                    alert(response.error.step);
+                    alert(response.error.reason);
+                    alert(response.error.metadata.order_id);
+                    alert(response.error.metadata.payment_id);
+            });
+
+
+            document.getElementById('rzp-button1').onclick = function(e){
+                rzp1.open();
+                e.preventDefault();
+            }
+            </script>
+            <div class="footer-text">
+                Payments are secured and encrypted. <br>
+                © 2024 Payment Gateway Co.
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+{% extends 'layouts/base.html' %} {% load static %} {% block content %}
+<h1
+  style="color: #4caf50; font-size: 2em; text-align: center; margin-top: 20px"
+>
+  Judge Tournament Fixtures - {{ sport }}
+</h1>
+
+{% if error %}
+<p style="color: red; font-weight: bold; text-align: center">{{ error }}</p>
+{% endif %}
+
+<form
+  method="post"
+  action="{% url 'judge_fixtures' sport=sport %}"
+  style="margin: 20px auto; width: 80%"
+>
+  {% csrf_token %}
+  <table
+    border="1"
+    style="width: 100%; border-collapse: collapse; text-align: center"
+  >
+    <thead style="background-color: #4caf50; color: white; font-weight: bold">
+      <tr>
+        <th>Match</th>
+        <th>Home Team</th>
+        <th>Away Team</th>
+        <th>Home Points</th>
+        <th>Away Points</th>
+        <th>Man of the Match</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for fixture in fixtures %}
+      <tr style="background-color: {% cycle '#f9f9f9' '#e8f5e9' %};">
+        <td>{{ forloop.counter }}</td>
+        <td>{{ fixture.home_team }}</td>
+        <td>{{ fixture.away_team }}</td>
+        <td>
+          <input
+            type="number"
+            name="home_points_{{ fixture.id }}"
+            value="{{ default_points_home }}"
+            min="0"
+            required
+            style="width: 60px; text-align: center"
+          />
+        </td>
+        <td>
+          <input
+            type="number"
+            name="away_points_{{ fixture.id }}"
+            value="{{ default_points_away }}"
+            min="0"
+            required
+            style="width: 60px; text-align: center"
+          />
+        </td>
+        <td>
+          <input
+            type="text"
+            name="man_of_the_match_{{ fixture.id }}"
+            value="{{ default_man_of_the_match }}"
+            style="width: 150px; text-align: center"
+          />
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <button
+    type="submit"
+    style="
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    "
+  >
+    Submit Results
+  </button>
+</form>
+
+<h2
+  style="color: #4caf50; font-size: 1.5em; text-align: center; margin-top: 30px"
+>
+  Leaderboard
+</h2>
+<table
+  border="1"
+  style="
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+  "
+>
+  <thead>
+    <tr style="background-color: #4caf50; color: white">
+      <th style="padding: 10px">Team</th>
+      <th style="padding: 10px">Total Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for team, points in leaderboard %}
+    <tr
+      style="background-color: {% cycle '#f9f9f9' '#e8f5e9' %}; font-weight: bold;"
+    >
+      <td style="padding: 10px">{{ team }}</td>
+      <td style="padding: 10px">{{ points }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h2
+  style="color: #4caf50; font-size: 1.5em; text-align: center; margin-top: 30px"
+>
+  Man of the Tournament
+</h2>
+<p style="text-align: center; font-size: 1.2em; color: #333">
+  {% if man_of_the_tournament %}
+  <span style="color: #4caf50; font-weight: bold"
+    >{{ man_of_the_tournament }}</span
+  >
+  {% else %} No awards given yet. {% endif %}
+</p>
+
+{% endblock content %}

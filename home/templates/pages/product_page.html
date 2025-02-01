@@ -1,0 +1,132 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container" style="gap: 20px; display: flex; flex-direction: column;">
+    <!-- View Cart Button -->
+    <div class="cart-view" style="display: flex; justify-content: end;">
+        <a href="{% url 'cart' %}" class="view-cart-btn"><i class="fa fa-shopping-cart text-lg opacity-10" aria-hidden="true"></i> View Cart</a>
+    </div>
+    <div class="product-list">
+        {% for product in products %}
+        <div class="product">
+            <img src="{% static product.image %}" alt="{{ product.name }}">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.price }} INR</p>
+            <a href="{% url 'add_to_cart' product.id %}" class="add-to-cart-btn">Add to Cart</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    /* Same styles from your original code */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .product {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 30%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .product img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .product h3 {
+        font-size: 20px;
+        color: #2c3e50;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .product p {
+        font-size: 14px;
+        color: #7f8c8d;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .add-to-cart-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .add-to-cart-btn:hover {
+        background-color: #2980b9;
+    }
+
+    /* View Cart Button */
+    .cart-view {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .view-cart-btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: #2ecc71;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .view-cart-btn:hover {
+        background-color: #27ae60;
+    }
+
+    @media (max-width: 768px) {
+        .product {
+            width: 45%;
+            height: 400px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .product {
+            width: 100%;
+            height: 400px;
+        }
+
+        .page-title {
+            font-size: 28px;
+        }
+    }
+</style>
+
+{% endblock content %}

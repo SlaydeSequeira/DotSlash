@@ -1,0 +1,36 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div style="padding: 20px;">
+        <h2>Resell an Item</h2>
+        <form method="post" enctype="multipart/form-data" action="{% url 'add_item' %}">
+            {% csrf_token %}
+            
+            <label for="item_image">Upload Image of Item:</label><br>
+            <input type="file" id="item_image" name="item_image" accept="image/*"><br>
+            
+            <label for="item_name">Name of Item:</label><br>
+            <input type="text" id="item_name" name="item_name" required><br>
+            
+            <label for="item_cost">Cost of Item:</label><br>
+            <input type="number" id="item_cost" name="item_cost" required><br>
+            
+            <label for="item_type">Type of Item:</label><br>
+            <select id="item_type" name="item_type" required>
+                <option value="tshirt">T-shirt</option>
+                <option value="hoodie">Hoodie</option>
+                <option value="jeans">Jeans</option>
+                <option value="jacket">Jacket</option>
+                <option value="sweater">Sweater</option>
+                <option value="shorts">Shorts</option>
+                <option value="dress">Dress</option>
+                <option value="skirt">Skirt</option>
+            </select><br>
+
+            <input type="text" id="action_type" name="action_type" value="resell" readonly><br>
+            
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </div>
+{% endblock content %}

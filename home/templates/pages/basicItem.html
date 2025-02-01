@@ -1,0 +1,33 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div style="padding: 20px;">
+    <h1>Basic Items</h1>
+    <h5>Add or donate Basic items.</h5>
+
+    <form method="POST" action="{% url 'passItOver' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="itemName">Item Name:</label>
+            <input type="text" class="form-control" id="itemName" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="itemCost">Cost:</label>
+            <input type="number" class="form-control" id="itemCost" name="cost" required>
+        </div>
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <input type="text" class="form-control" id="category" name="category" value="basic" readonly>
+        </div>
+        <div class="form-group">
+            <label for="image">Image:</label>
+            <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+
+  
+</div>
+{% endblock content %}

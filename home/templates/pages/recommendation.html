@@ -1,0 +1,28 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h1>Your Clothing Recommendations</h1>
+
+    {% if items %}
+        <ul>
+            {% for item in items %}
+                <li>
+                    <p><strong>Name:</strong> {{ item.name }}</p>
+                    <p><strong>Type:</strong> {{ item.type }}</p>
+                    <p><strong>Season:</strong> {{ item.season }}</p>
+                    <p><strong>Color:</strong> {{ item.color }}</p>
+                    <p><strong>Carbon Footprint:</strong> {{ item.carbon_footprint }}</p>
+                    <p><strong>Gender:</strong> {{ item.gender }}</p>
+                    <hr> <!-- Adds a separator between items -->
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>{{ message }}</p>
+    {% endif %}
+    
+    <a href="{% url 'recommend' %}">Make Another Request</a>
+
+{% endblock content %}

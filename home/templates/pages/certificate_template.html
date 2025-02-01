@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificates</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f4f4f9;
+      }
+
+      .certificate-container {
+        width: 800px;
+        height: 600px;
+        border: 10px solid #4caf50;
+        padding: 40px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .certificate-header {
+        font-size: 2em;
+        color: #4caf50;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .certificate-body {
+        font-size: 1.5em;
+        color: #333;
+      }
+
+      .recipient-name {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #333;
+        margin: 20px 0;
+      }
+
+      .certificate-footer {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around; /* Space out signatures evenly */
+        align-items: flex-end; /* Align signatures and names at the bottom */
+      }
+
+      .footer-item {
+        text-align: center;
+        font-size: 0.9em;
+      }
+
+      .footer-item span {
+        display: block;
+        font-weight: bold;
+        color: #4caf50;
+        margin-top: 5px; /* Space between signature and name */
+      }
+
+      .signature {
+        width: 100px; /* Set the desired width for the signature images */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 20px; /* Space above the signature images */
+      }
+
+      .download-button {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        background-color: #4caf50; /* Green background */
+        color: white; /* White text */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Bold text */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+      }
+
+      .download-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+        transform: translateY(-2px); /* Slight lift effect */
+      }
+
+      .download-button:active {
+        transform: translateY(0); /* Reset on click */
+      }
+
+      /* Logo styles */
+      .sponsor-logo {
+        width: 150px; /* Set the desired width */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Space below the logo */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Certificates</h1>
+    {% for recipient_name, _ , uid in certificates %}
+    <div class="certificate-container">
+      <!-- Sponsor Logo -->
+      <img
+        src="https://d20ce51t0ju3pt.cloudfront.net/images/banners/fup-logo.jpg"
+        alt="Sponsor Logo"
+        class="sponsor-logo"
+      />
+
+      <div class="certificate-header">Certificate of Participation</div>
+      <div class="certificate-body">
+        This is to certify that
+        <div class="recipient-name">{{ recipient_name }}</div>
+        has successfully participated in the Cricket tournament
+        <div class="course-name">{{ course_name }}</div>
+        on 24/10/24<span class="date">{{ completion_date }}</span>.
+        <h1>{{uid}}</h1>
+      </div>
+      <div class="certificate-footer">
+        <div class="footer-item">
+          <img
+            src="https://www.signwell.com/assets/vip-signatures/steve-wozniak-signature-2b444ceb670c71379d2a9f32d3c3cf5f647210447757920b2d278749632b1210.svg"
+            alt="Signature Left"
+            class="signature"
+          />
+          <span>Event Head</span>
+        </div>
+
+        <div class="footer-item">
+          <img
+            src="https://www.signwell.com/assets/vip-signatures/steve-wozniak-signature-2b444ceb670c71379d2a9f32d3c3cf5f647210447757920b2d278749632b1210.svg"
+            alt="Signature Right"
+            class="signature"
+          />
+          <span>CEO</span>
+        </div>
+      </div>
+    </div>
+    <a
+      href="{% url 'download_certificate' recipient_name %}"
+      class="download-button"
+      >Download Certificate</a
+    >
+    {% endfor %}
+  </body>
+</html>

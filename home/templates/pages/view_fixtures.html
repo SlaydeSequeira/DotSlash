@@ -1,0 +1,31 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; padding: 50px 0px;">
+    {% for event in events %}
+  <div class="card" style="width: 300px; height: 500px; {% if event.status == 'close' %}border:2px red solid{% else %}border:2px green solid{% endif %}">
+    <div class="card-body" style="padding: 20px; min-height: 500px; display: flex; flex-direction: column;">
+      
+      <div style="display: flex; justify-content: center;">
+        <!-- Display event poster if available, otherwise show a placeholder -->
+        <img src="{{ event.poster|default:'img/ad1.webp' }}" style="width: 80%; max-height: 200px; min-height: 200px;" alt="Event Poster">
+      </div>
+
+      <div style="margin-top: 15px;">
+        <h2>{{ event.name }}</h2>
+        <h5>{{ event.location }}</h5>
+        <h5>{{ event.event_time }}</h5>
+      </div>
+      
+      <div style="margin-top: 20px;">
+        <a href="/judge_fixtures/{{event.name}}"><button class="btn btn-primary">Judge Event</button></a>
+      </div>
+
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock content %}

@@ -1,0 +1,97 @@
+<!-- {% extends 'layouts/base.html' %} -->
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Divs</title>
+    <style>
+        .draggable {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            cursor: move;
+            user-select: none;
+        }
+        .fixed-size {
+            width: 200px;
+            height: 200px;
+            object-fit: cover; /* This ensures the image maintains its aspect ratio within the given dimensions */
+}
+
+    </style>
+</head>
+<body>
+    <div id="draggable1" class="draggable">
+        <img class="fixed-size" src="{% static 'img/jersey1.jpg' %}" alt="">
+    </div>
+    <div id="draggable2" class="draggable">
+        <img class="fixed-size" src="{% static 'img/jersey2.jpg' %}" alt="">
+
+    </div>
+    <div id="draggable3" class="draggable">
+        <img class="fixed-size" src="{% static 'img/jersey3.jpg' %}" alt="">
+
+    </div>
+    <div id="draggable4" class="draggable">
+        <img class="fixed-size" src="{% static 'img/track1.jpg' %}" alt="">
+
+
+    </div>
+    <div id="draggable5" class="draggable">
+        <img class="fixed-size" src="{% static 'img/track2.jpg' %}" alt="">
+
+
+    </div>
+    <div id="draggable6" class="draggable">
+        <img class="fixed-size" src="{% static 'img/track3.jpg' %}" alt="">
+
+
+    </div>
+
+    <script>
+        function makeDraggable(element) {
+            let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+
+            element.onmousedown = dragMouseDown;
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                element.style.top = (element.offsetTop - pos2) + "px";
+                element.style.left = (element.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+
+        document.querySelectorAll('.draggable').forEach(makeDraggable);
+    </script>
+</body>
+</html>
+
+{% endblock content %}

@@ -1,0 +1,128 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid py-4">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 col-md-8">
+      <!-- Chat Header -->
+      <div class="card bg-gradient-dark text-white shadow-xl">
+        <div class="card-body p-3 d-flex justify-content-between align-items-center">
+          <h5 class="mb-0" style="color: white;">ChatBot</h5>
+          <span class="badge bg-success">Online</span>
+        </div>
+      </div>
+
+      <!-- Chat Body -->
+      <div class="card mt-3 shadow">
+        <div class="card-body chat-body p-4" style="height: 400px; overflow-y: auto;" id="chatBody">
+          <!-- Initial Message from Gemini -->
+          <div class="d-flex align-items-start mb-4">
+            <div class="avatar bg-gradient-primary me-3">
+              <i class="fas fa-robot text-white p-3"></i>
+            </div>
+            <div class="message bg-gray-100 p-3 border-radius-lg">
+              <p class="mb-0">Hello! I am BroCode, your virtual assistant. How can I help you today?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input -->
+      <div class="card mt-3 shadow-lg">
+        <div class="card-body p-3 d-flex">
+          <input type="text" class="form-control me-3" id="messageInput" placeholder="Type a message..." autocomplete="off">
+          <button type="button" class="btn bg-gradient-primary text-white" id="sendMessageBtn">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const sendMessageBtn = document.querySelector('#sendMessageBtn');
+    const messageInput = document.querySelector('#messageInput');
+    const chatBody = document.querySelector('#chatBody');
+    
+
+    // Function to send message to the backend
+    async function sendMessage() {
+        const userMessage = messageInput.value.trim();
+
+        if (userMessage !== '') {
+            // Append the user's message to the chat body
+            appendMessage(userMessage, 'user');
+            messageInput.value = ''; // Clear the input
+
+            try {
+                // Send message to the backend (chat_with_gemini endpoint)
+                const response = await fetch('{% url "chat_with_gemini" %}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `message=${encodeURIComponent(userMessage)}`
+                });
+
+                const data = await response.json();
+                if (data.status === 'success') {
+                    // Append Gemini's response to the chat body
+                    appendMessage(data.message, 'bot');
+                } else {
+                    appendMessage("Sorry, I couldn't understand that.", 'bot');
+                    console.error(data.message);
+                }
+            } catch (error) {
+                appendMessage("An error occurred while sending your message.", 'bot');
+                console.error('Error:', error);
+            }
+        }
+    }
+
+    // Event listener for the send button
+    sendMessageBtn.addEventListener('click', sendMessage);
+
+    // Event listener for the Enter key
+    messageInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();  // Prevent default form submission
+            sendMessage();
+        }
+    });
+
+    function appendMessage(message, sender) {
+        const messageElement = document.createElement('div');
+
+        if (sender === 'bot') {
+            messageElement.classList.add('d-flex', 'align-items-start', 'mb-4');
+            messageElement.innerHTML = `
+                <div class="avatar bg-gradient-primary me-3">
+                    <i class="fas fa-robot text-white p-3"></i>
+                </div>
+                <div class="message bg-gray-100 p-3 border-radius-lg">
+                    <p class="mb-0">${message}</p>
+                </div>
+            `;
+        } else {
+            messageElement.classList.add('d-flex', 'align-items-start', 'mb-4', 'justify-content-end');
+            messageElement.innerHTML = `
+                <div class="message bg-gradient-dark text-white p-3 border-radius-lg">
+                    <p class="mb-0">${message}</p>
+                </div>
+                <div class="avatar bg-gradient-dark ms-3">
+                    <i class="fas fa-user text-white p-3"></i>
+                </div>
+            `;
+        }
+
+        // Append message to the chat body
+        chatBody.appendChild(messageElement);
+        chatBody.scrollTop = chatBody.scrollHeight; // Scroll to the bottom
+    }
+});
+</script>
+
+{% endblock content %}
