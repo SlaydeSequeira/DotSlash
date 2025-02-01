@@ -3,6 +3,20 @@ gunicorn
 python-dotenv
 whitenoise
 django-admin-soft-dashboard==1.0.11
+firebase_admin
+razorpay
+google.generativeai
+pandas
+numpy
+matplotlib
+seaborn 
+opencv-python
+cvzone
+reportlab
+mediapipe
+
+
+
 
 # psycopg2-binary
 # mysqlclient
